@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "DevicesInterconnection (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "DevicesInterconnection (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
