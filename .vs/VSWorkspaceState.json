@@ -2,9 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\Platform",
-    "\\Platform\\Windows",
-    "\\Platform\\Windows\\ModelPages",
-    "\\Platform\\Windows\\ModelPages\\AddNew"
+    "\\Platform\\Windows"
   ],
+  "SelectedNode": "\\Platform\\Windows\\DevicesInterconnection.csproj",
   "PreviewInSolutionExplorer": false
 }

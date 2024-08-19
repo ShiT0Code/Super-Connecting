@@ -1,9 +1,6 @@
 App.xbf
-MainWindow.xbf
-ModelPages\AddaNew.xbf
-ModelPages\AddNew\BySend.xbf
-ModelPages\AddNewMenu.xbf
-ModelPages\Home.xbf
-ModelPages\MyDevices.xbf
-ModelPages\WaitingToAdd.xbf
-Styles\ControlStyles.xbf
+ViewModuls\LinkNew\ByPIN.xbf
+ViewModuls\LinkNew\BySend.xbf
+ViewModuls\MainPages\Home.xbf
+ViewModuls\MainPages\LinkNewMain.xbf
+ViewModuls\MainWindow.xbf

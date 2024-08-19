@@ -14,13 +14,10 @@
     <DefaultLanguage>zh-CN</DefaultLanguage>
   </PropertyGroup>
   <ItemGroup>
-    <None Remove="ModelPages\AddaNew.xaml" />
-    <None Remove="ModelPages\AddNewMenu.xaml" />
-    <None Remove="ModelPages\AddNew\BySend.xaml" />
-    <None Remove="ModelPages\Home.xaml" />
-    <None Remove="ModelPages\MyDevices.xaml" />
-    <None Remove="ModelPages\WaitingToAdd.xaml" />
-    <None Remove="Styles\ControlStyles.xaml" />
+    <None Remove="ByPIN.xaml" />
+    <None Remove="Home.xaml" />
+    <None Remove="LinkNewMain.xaml" />
+    <None Remove="ViewModuls\LinkNew\BySend.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -48,14 +45,27 @@
     <ProjectCapability Include="Msix" />
   </ItemGroup>
   <ItemGroup>
-    <Page Update="ModelPages\Home.xaml">
+    <Page Update="ByPIN.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="Styles\ControlStyles.xaml">
+    <Page Update="LinkNewMain.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Home.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="LinkNewModels\BySend.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ViewModuls\MainPages\" />
   </ItemGroup>
 
   <!--
@@ -66,30 +76,4 @@
   <PropertyGroup Condition="'$(DisableHasPackageAndPublishMenuAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
     <HasPackageAndPublishMenu>true</HasPackageAndPublishMenu>
   </PropertyGroup>
-  <ItemGroup>
-    <CustomAdditionalCompileInputs Remove="ModelPages\MyDevices.xaml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Remove="ModelPages\MyDevices.xaml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Page Update="ModelPages\AddaNew.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>
-  <ItemGroup>
-    <Page Update="ModelPages\WaitingToAdd.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>
-  <ItemGroup>
-    <Page Update="ModelPages\AddNewMenu.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>
-  <ItemGroup>
-    <Page Update="ModelPages\AddNew\BySend.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-  </ItemGroup>
 </Project>

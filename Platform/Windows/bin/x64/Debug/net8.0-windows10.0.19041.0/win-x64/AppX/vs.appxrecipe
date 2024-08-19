@@ -8,7 +8,7 @@
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
     <SolutionConfiguration>Debug|x64</SolutionConfiguration>
     <PackageArchitecture>x64</PackageArchitecture>
-    <PackageIdentityName>5a274503-df06-40f2-9bfc-a087a4fb0077</PackageIdentityName>
+    <PackageIdentityName>4bbb5132-21e9-4438-a938-c271105c1005</PackageIdentityName>
     <PackageIdentityPublisher>CN=hbeau</PackageIdentityPublisher>
     <IntermediateOutputPath>C:\Users\hbeau\ScoreCode\DevicesInterconnection\Platform\Windows\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\</IntermediateOutputPath>
     <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
@@ -19,10 +19,10 @@
     <WindowsSdkPath>
     </WindowsSdkPath>
     <LayoutDir>C:\Users\hbeau\ScoreCode\DevicesInterconnection\Platform\Windows\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppX</LayoutDir>
-    <RegisteredManifestChecksum>D86D6A4AF8AC827C965C44586BB5ED0DF2E5167EBCC709E953BA8E7BF44D0D71</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>5a274503-df06-40f2-9bfc-a087a4fb0077_1.0.0.0_x64__6mxq92a787np8</RegisteredPackageMoniker>
-    <RegisteredUserModeAppID>5a274503-df06-40f2-9bfc-a087a4fb0077_6mxq92a787np8!App</RegisteredUserModeAppID>
-    <RegisteredPackageID>5a274503-df06-40f2-9bfc-a087a4fb0077</RegisteredPackageID>
+    <RegisteredManifestChecksum>0FF14DE7FD900A8D87D165896FD50CECB07D3275562997AE9376DE19831B39D6</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>4bbb5132-21e9-4438-a938-c271105c1005_1.0.0.0_x64__6mxq92a787np8</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>4bbb5132-21e9-4438-a938-c271105c1005_6mxq92a787np8!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>4bbb5132-21e9-4438-a938-c271105c1005</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=hbeau</RegisteredPackagePublisher>
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
@@ -30,29 +30,29 @@
     <AppXManifest Include="C:\Users\hbeau\ScoreCode\DevicesInterconnection\Platform\Windows\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-08-17T07:32:40.088</Modified>
+      <Modified>2024-08-19T13:29:06.347</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\hbeau\ScoreCode\DevicesInterconnection\Platform\Windows\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-08-17T06:58:47.877</Modified>
+      <Modified>2024-08-19T13:29:05.690</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hbeau\ScoreCode\DevicesInterconnection\Platform\Windows\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\DevicesInterconnection.runtimeconfig.json">
       <PackagePath>DevicesInterconnection.runtimeconfig.json</PackagePath>
-      <Modified>2024-08-16T03:20:13.347</Modified>
+      <Modified>2024-08-19T13:07:08.979</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hbeau\ScoreCode\DevicesInterconnection\Platform\Windows\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\DevicesInterconnection.dll">
       <PackagePath>DevicesInterconnection.dll</PackagePath>
-      <Modified>2024-08-17T07:32:39.400</Modified>
+      <Modified>2024-08-19T13:29:04.272</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hbeau\ScoreCode\DevicesInterconnection\Platform\Windows\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\apphost.exe">
       <PackagePath>DevicesInterconnection.exe</PackagePath>
-      <Modified>2024-08-17T07:32:39.415</Modified>
+      <Modified>2024-08-19T13:29:04.376</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hbeau\ScoreCode\DevicesInterconnection\Platform\Windows\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\DevicesInterconnection.deps.json">
       <PackagePath>DevicesInterconnection.deps.json</PackagePath>
-      <Modified>2024-08-17T04:02:22.704</Modified>
+      <Modified>2024-08-19T13:29:05.159</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hbeau\.nuget\packages\microsoft.netcore.app.runtime.win-x64\8.0.8\runtimes\win-x64\lib\net8.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>

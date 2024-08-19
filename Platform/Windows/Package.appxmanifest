@@ -8,11 +8,11 @@
   IgnorableNamespaces="uap rescap">
 
   <Identity
-    Name="5a274503-df06-40f2-9bfc-a087a4fb0077"
+    Name="4bbb5132-21e9-4438-a938-c271105c1005"
     Publisher="CN=hbeau"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="5a274503-df06-40f2-9bfc-a087a4fb0077" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="4bbb5132-21e9-4438-a938-c271105c1005" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>DevicesInterconnection</DisplayName>
@@ -34,7 +34,7 @@
       Executable="$targetnametoken$.exe"
       EntryPoint="$targetentrypoint$">
       <uap:VisualElements
-        DisplayName="设备互联"
+        DisplayName="DevicesInterconnection"
         Description="DevicesInterconnection"
         BackgroundColor="transparent"
         Square150x150Logo="Assets\Square150x150Logo.png"

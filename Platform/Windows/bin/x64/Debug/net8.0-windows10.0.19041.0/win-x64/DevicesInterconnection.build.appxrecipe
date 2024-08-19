@@ -8,7 +8,7 @@
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
     <SolutionConfiguration>Debug|x64</SolutionConfiguration>
     <PackageArchitecture>x64</PackageArchitecture>
-    <PackageIdentityName>5a274503-df06-40f2-9bfc-a087a4fb0077</PackageIdentityName>
+    <PackageIdentityName>4bbb5132-21e9-4438-a938-c271105c1005</PackageIdentityName>
     <PackageIdentityPublisher>CN=hbeau</PackageIdentityPublisher>
     <IntermediateOutputPath>C:\Users\hbeau\ScoreCode\DevicesInterconnection\Platform\Windows\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\</IntermediateOutputPath>
     <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>

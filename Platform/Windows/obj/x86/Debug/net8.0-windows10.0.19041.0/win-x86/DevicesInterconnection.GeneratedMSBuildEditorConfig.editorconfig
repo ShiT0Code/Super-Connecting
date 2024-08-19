@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DevicesInterconnection
-build_property.ProjectDir = C:\Users\hbeau\ScoreCode\DevicesInterconnection\Platform\Windows\DevicesInterconnection\
+build_property.ProjectDir = C:\Users\hbeau\ScoreCode\DevicesInterconnection\Platform\DevicesInterconnection\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

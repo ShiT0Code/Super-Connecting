@@ -1,20 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\hbeau\\ScoreCode\\DevicesInterconnection\\Platform\\Windows\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{38452895-3136-41A7-BFE2-CB9A2A439173}|DevicesInterconnection.csproj|c:\\users\\hbeau\\scorecode\\devicesinterconnection\\platform\\windows\\networkmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38452895-3136-41A7-BFE2-CB9A2A439173}|DevicesInterconnection.csproj|solutionrelative:networkmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38452895-3136-41A7-BFE2-CB9A2A439173}|DevicesInterconnection.csproj|c:\\users\\hbeau\\scorecode\\devicesinterconnection\\platform\\windows\\encryptionmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38452895-3136-41A7-BFE2-CB9A2A439173}|DevicesInterconnection.csproj|solutionrelative:encryptionmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{38452895-3136-41A7-BFE2-CB9A2A439173}|DevicesInterconnection.csproj|c:\\users\\hbeau\\scorecode\\devicesinterconnection\\platform\\windows\\modelpages\\addnew\\bysend.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38452895-3136-41A7-BFE2-CB9A2A439173}|DevicesInterconnection.csproj|solutionrelative:modelpages\\addnew\\bysend.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -22,50 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EncryptionModule.cs",
-              "DocumentMoniker": "C:\\Users\\hbeau\\ScoreCode\\DevicesInterconnection\\Platform\\Windows\\EncryptionModule.cs",
-              "RelativeDocumentMoniker": "EncryptionModule.cs",
-              "ToolTip": "C:\\Users\\hbeau\\ScoreCode\\DevicesInterconnection\\Platform\\Windows\\EncryptionModule.cs",
-              "RelativeToolTip": "EncryptionModule.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAhwCAAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-17T07:27:52.3Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BySend.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\hbeau\\ScoreCode\\DevicesInterconnection\\Platform\\Windows\\ModelPages\\AddNew\\BySend.xaml.cs",
-              "RelativeDocumentMoniker": "ModelPages\\AddNew\\BySend.xaml.cs",
-              "ToolTip": "C:\\Users\\hbeau\\ScoreCode\\DevicesInterconnection\\Platform\\Windows\\ModelPages\\AddNew\\BySend.xaml.cs",
-              "RelativeToolTip": "ModelPages\\AddNew\\BySend.xaml.cs",
-              "ViewState": "AQIAAEcAAAAAAAAAAAAowE0AAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-17T07:14:53.693Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "NetworkModel.cs",
-              "DocumentMoniker": "C:\\Users\\hbeau\\ScoreCode\\DevicesInterconnection\\Platform\\Windows\\NetworkModel.cs",
-              "RelativeDocumentMoniker": "NetworkModel.cs",
-              "ToolTip": "C:\\Users\\hbeau\\ScoreCode\\DevicesInterconnection\\Platform\\Windows\\NetworkModel.cs",
-              "RelativeToolTip": "NetworkModel.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAUwAwAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-17T06:26:11.365Z",
-              "EditorCaption": ""
             }
           ]
         }
