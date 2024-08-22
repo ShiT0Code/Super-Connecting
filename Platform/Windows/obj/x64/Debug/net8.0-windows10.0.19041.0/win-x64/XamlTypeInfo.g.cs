@@ -268,7 +268,7 @@ namespace DevicesInterconnection.DevicesInterconnection_XamlTypeInfo
             _typeNameTable[40] = "Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsJustification";
             _typeNameTable[41] = "Microsoft.UI.Xaml.Controls.IndexBasedLayoutOrientation";
             _typeNameTable[42] = "DevicesInterconnection.ViewModuls.LinkNew.WaitingToAdd";
-            _typeNameTable[43] = "DevicesInterconnection.ViewModuls.LinkNew.WaitingLinkingNewViewModel";
+            _typeNameTable[43] = "DevicesInterconnection.ViewModuls.LinkNew.LinkNewViewModel";
             _typeNameTable[44] = "DevicesInterconnection.ViewModuls.MainPages.Home";
             _typeNameTable[45] = "Microsoft.UI.Xaml.Controls.SelectorBar";
             _typeNameTable[46] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.SelectorBarItem>";
@@ -339,7 +339,7 @@ namespace DevicesInterconnection.DevicesInterconnection_XamlTypeInfo
             _typeTable[40] = typeof(global::Microsoft.UI.Xaml.Controls.LinedFlowLayoutItemsJustification);
             _typeTable[41] = typeof(global::Microsoft.UI.Xaml.Controls.IndexBasedLayoutOrientation);
             _typeTable[42] = typeof(global::DevicesInterconnection.ViewModuls.LinkNew.WaitingToAdd);
-            _typeTable[43] = typeof(global::DevicesInterconnection.ViewModuls.LinkNew.WaitingLinkingNewViewModel);
+            _typeTable[43] = typeof(global::DevicesInterconnection.ViewModuls.LinkNew.LinkNewViewModel);
             _typeTable[44] = typeof(global::DevicesInterconnection.ViewModuls.MainPages.Home);
             _typeTable[45] = typeof(global::Microsoft.UI.Xaml.Controls.SelectorBar);
             _typeTable[46] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.SelectorBarItem>);
@@ -411,7 +411,7 @@ namespace DevicesInterconnection.DevicesInterconnection_XamlTypeInfo
         private object Activate_36_LinedFlowLayout() { return new global::Microsoft.UI.Xaml.Controls.LinedFlowLayout(); }
         private object Activate_37_VirtualizingLayout() { return new global::Microsoft.UI.Xaml.Controls.VirtualizingLayout(); }
         private object Activate_42_WaitingToAdd() { return new global::DevicesInterconnection.ViewModuls.LinkNew.WaitingToAdd(); }
-        private object Activate_43_WaitingLinkingNewViewModel() { return new global::DevicesInterconnection.ViewModuls.LinkNew.WaitingLinkingNewViewModel(); }
+        private object Activate_43_LinkNewViewModel() { return new global::DevicesInterconnection.ViewModuls.LinkNew.LinkNewViewModel(); }
         private object Activate_44_Home() { return new global::DevicesInterconnection.ViewModuls.MainPages.Home(); }
         private object Activate_45_SelectorBar() { return new global::Microsoft.UI.Xaml.Controls.SelectorBar(); }
         private object Activate_47_SelectorBarItem() { return new global::Microsoft.UI.Xaml.Controls.SelectorBarItem(); }
@@ -739,12 +739,12 @@ namespace DevicesInterconnection.DevicesInterconnection_XamlTypeInfo
             case 42:   //  DevicesInterconnection.ViewModuls.LinkNew.WaitingToAdd
                 userType = new global::DevicesInterconnection.DevicesInterconnection_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_42_WaitingToAdd;
-                userType.AddMemberName("ViewModelWLN");
+                userType.AddMemberName("LinkNewViewModel1");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 43:   //  DevicesInterconnection.ViewModuls.LinkNew.WaitingLinkingNewViewModel
+            case 43:   //  DevicesInterconnection.ViewModuls.LinkNew.LinkNewViewModel
                 userType = new global::DevicesInterconnection.DevicesInterconnection_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
@@ -1419,15 +1419,15 @@ namespace DevicesInterconnection.DevicesInterconnection_XamlTypeInfo
             var that = (global::Microsoft.UI.Xaml.Controls.Layout)instance;
             return that.IndexBasedLayoutOrientation;
         }
-        private object get_44_WaitingToAdd_ViewModelWLN(object instance)
+        private object get_44_WaitingToAdd_LinkNewViewModel1(object instance)
         {
             var that = (global::DevicesInterconnection.ViewModuls.LinkNew.WaitingToAdd)instance;
-            return that.ViewModelWLN;
+            return that.LinkNewViewModel1;
         }
-        private void set_44_WaitingToAdd_ViewModelWLN(object instance, object Value)
+        private void set_44_WaitingToAdd_LinkNewViewModel1(object instance, object Value)
         {
             var that = (global::DevicesInterconnection.ViewModuls.LinkNew.WaitingToAdd)instance;
-            that.ViewModelWLN = (global::DevicesInterconnection.ViewModuls.LinkNew.WaitingLinkingNewViewModel)Value;
+            that.LinkNewViewModel1 = (global::DevicesInterconnection.ViewModuls.LinkNew.LinkNewViewModel)Value;
         }
         private object get_45_SelectorBar_Items(object instance)
         {
@@ -2260,11 +2260,11 @@ namespace DevicesInterconnection.DevicesInterconnection_XamlTypeInfo
                 xamlMember.Getter = get_43_Layout_IndexBasedLayoutOrientation;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "DevicesInterconnection.ViewModuls.LinkNew.WaitingToAdd.ViewModelWLN":
+            case "DevicesInterconnection.ViewModuls.LinkNew.WaitingToAdd.LinkNewViewModel1":
                 userType = (global::DevicesInterconnection.DevicesInterconnection_XamlTypeInfo.XamlUserType)GetXamlTypeByName("DevicesInterconnection.ViewModuls.LinkNew.WaitingToAdd");
-                xamlMember = new global::DevicesInterconnection.DevicesInterconnection_XamlTypeInfo.XamlMember(this, "ViewModelWLN", "DevicesInterconnection.ViewModuls.LinkNew.WaitingLinkingNewViewModel");
-                xamlMember.Getter = get_44_WaitingToAdd_ViewModelWLN;
-                xamlMember.Setter = set_44_WaitingToAdd_ViewModelWLN;
+                xamlMember = new global::DevicesInterconnection.DevicesInterconnection_XamlTypeInfo.XamlMember(this, "LinkNewViewModel1", "DevicesInterconnection.ViewModuls.LinkNew.LinkNewViewModel");
+                xamlMember.Getter = get_44_WaitingToAdd_LinkNewViewModel1;
+                xamlMember.Setter = set_44_WaitingToAdd_LinkNewViewModel1;
                 break;
             case "Microsoft.UI.Xaml.Controls.SelectorBar.Items":
                 userType = (global::DevicesInterconnection.DevicesInterconnection_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.SelectorBar");

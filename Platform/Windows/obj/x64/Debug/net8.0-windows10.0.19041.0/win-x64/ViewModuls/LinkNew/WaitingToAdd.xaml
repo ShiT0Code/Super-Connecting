@@ -32,7 +32,7 @@
                 Grid.Row="2"/>
         <ItemsView x:ConnectionId='3'
             Grid.Row="3"
-                                                            
+                                                                               
             SelectionMode="Extended">
             <ItemsView.ItemTemplate>
                 <DataTemplate                                         >

@@ -70,29 +70,7 @@ namespace DevicesInterconnection.CS
                 }
             }
         }
-
-        public static async Task CollectingDevices()
-        {
-
-            while (true)
-            {
-                await Task.Delay(1500);
-                string CollectedInfo = await NetworkModule.InNetReceiveReplies(12568);
-
-                if(CollectedInfo.StartsWith("Error"))
-                {
-                    continue;
-                }
-
-                string[] KeyWords = CollectedInfo.Split(',');
-
-                string type = KeyWords[0];
-
-                if(type=="B"||type=="C")
-                {
-                    continue;
-                }
-            }
-        }
     }
+
+    
 }

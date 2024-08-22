@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\hbeau\\ScoreCode\\DevicesInterconnection\\Platform\\Windows\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BD3F5BAB-B9FF-4841-BF0A-479465851859}|DevicesInterconnection.csproj|c:\\users\\hbeau\\scorecode\\devicesinterconnection\\platform\\windows\\viewmoduls\\linknew\\waitingtoadd.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{BD3F5BAB-B9FF-4841-BF0A-479465851859}|DevicesInterconnection.csproj|solutionrelative:viewmoduls\\linknew\\waitingtoadd.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BD3F5BAB-B9FF-4841-BF0A-479465851859}|DevicesInterconnection.csproj|c:\\users\\hbeau\\scorecode\\devicesinterconnection\\platform\\windows\\viewmoduls\\linknew\\waitingtoadd.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD3F5BAB-B9FF-4841-BF0A-479465851859}|DevicesInterconnection.csproj|solutionrelative:viewmoduls\\linknew\\waitingtoadd.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD3F5BAB-B9FF-4841-BF0A-479465851859}|DevicesInterconnection.csproj|c:\\users\\hbeau\\scorecode\\devicesinterconnection\\platform\\windows\\viewmoduls\\linknew\\waitinglinkingnewviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD3F5BAB-B9FF-4841-BF0A-479465851859}|DevicesInterconnection.csproj|solutionrelative:viewmoduls\\linknew\\waitinglinkingnewviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BD3F5BAB-B9FF-4841-BF0A-479465851859}|DevicesInterconnection.csproj|c:\\users\\hbeau\\scorecode\\devicesinterconnection\\platform\\windows\\viewmoduls\\linknew\\waitingtoadd.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BD3F5BAB-B9FF-4841-BF0A-479465851859}|DevicesInterconnection.csproj|solutionrelative:viewmoduls\\linknew\\waitingtoadd.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD3F5BAB-B9FF-4841-BF0A-479465851859}|DevicesInterconnection.csproj|c:\\users\\hbeau\\scorecode\\devicesinterconnection\\platform\\windows\\cs\\networkmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD3F5BAB-B9FF-4841-BF0A-479465851859}|DevicesInterconnection.csproj|solutionrelative:cs\\networkmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BD3F5BAB-B9FF-4841-BF0A-479465851859}|DevicesInterconnection.csproj|c:\\users\\hbeau\\scorecode\\devicesinterconnection\\platform\\windows\\viewmoduls\\linknew\\waitinglinkingnewviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD3F5BAB-B9FF-4841-BF0A-479465851859}|DevicesInterconnection.csproj|solutionrelative:viewmoduls\\linknew\\waitinglinkingnewviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BD3F5BAB-B9FF-4841-BF0A-479465851859}|DevicesInterconnection.csproj|c:\\users\\hbeau\\scorecode\\devicesinterconnection\\platform\\windows\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 155,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,38 +38,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\hbeau\\ScoreCode\\DevicesInterconnection\\Platform\\Windows\\App.xaml.cs",
               "RelativeDocumentMoniker": "App.xaml.cs",
               "ToolTip": "C:\\Users\\hbeau\\ScoreCode\\DevicesInterconnection\\Platform\\Windows\\App.xaml.cs",
               "RelativeToolTip": "App.xaml.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAQwDUAAAAOAAAA",
+              "ViewState": "AQIAACsAAAAAAAAAAAAQwDQAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T13:23:08.175Z"
+              "WhenOpened": "2024-08-21T13:23:08.175Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "WaitingToAdd.xaml.cs",
               "DocumentMoniker": "C:\\Users\\hbeau\\ScoreCode\\DevicesInterconnection\\Platform\\Windows\\ViewModuls\\LinkNew\\WaitingToAdd.xaml.cs",
               "RelativeDocumentMoniker": "ViewModuls\\LinkNew\\WaitingToAdd.xaml.cs",
-              "ToolTip": "C:\\Users\\hbeau\\ScoreCode\\DevicesInterconnection\\Platform\\Windows\\ViewModuls\\LinkNew\\WaitingToAdd.xaml.cs",
-              "RelativeToolTip": "ViewModuls\\LinkNew\\WaitingToAdd.xaml.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAuwCMAAAAVAAAA",
+              "ToolTip": "C:\\Users\\hbeau\\ScoreCode\\DevicesInterconnection\\Platform\\Windows\\ViewModuls\\LinkNew\\WaitingToAdd.xaml.cs*",
+              "RelativeToolTip": "ViewModuls\\LinkNew\\WaitingToAdd.xaml.cs*",
+              "ViewState": "AQIAABQAAAAAAAAAAAAewCMAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-21T13:18:29.059Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "WaitingToAdd.xaml",
               "DocumentMoniker": "C:\\Users\\hbeau\\ScoreCode\\DevicesInterconnection\\Platform\\Windows\\ViewModuls\\LinkNew\\WaitingToAdd.xaml",
               "RelativeDocumentMoniker": "ViewModuls\\LinkNew\\WaitingToAdd.xaml",
-              "ToolTip": "C:\\Users\\hbeau\\ScoreCode\\DevicesInterconnection\\Platform\\Windows\\ViewModuls\\LinkNew\\WaitingToAdd.xaml*",
-              "RelativeToolTip": "ViewModuls\\LinkNew\\WaitingToAdd.xaml*",
-              "ViewState": "AQIAACgAAAAAAAAAAAAiwD4AAABDAAAA",
+              "ToolTip": "C:\\Users\\hbeau\\ScoreCode\\DevicesInterconnection\\Platform\\Windows\\ViewModuls\\LinkNew\\WaitingToAdd.xaml",
+              "RelativeToolTip": "ViewModuls\\LinkNew\\WaitingToAdd.xaml",
+              "ViewState": "AQIAABwAAAAAAAAAAAAkwCoAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-08-21T10:17:02.61Z",
               "EditorCaption": ""
@@ -86,33 +83,23 @@
               "RelativeDocumentMoniker": "ViewModuls\\LinkNew\\WaitingLinkingNewViewModel.cs",
               "ToolTip": "C:\\Users\\hbeau\\ScoreCode\\DevicesInterconnection\\Platform\\Windows\\ViewModuls\\LinkNew\\WaitingLinkingNewViewModel.cs",
               "RelativeToolTip": "ViewModuls\\LinkNew\\WaitingLinkingNewViewModel.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAIwCMAAAAYAAAA",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAkwDwAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T12:00:33.038Z"
+              "WhenOpened": "2024-08-21T12:00:33.038Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "NetworkModule.cs",
-              "DocumentMoniker": "C:\\Users\\hbeau\\ScoreCode\\DevicesInterconnection\\Platform\\Windows\\CS\\NetworkModule.cs",
-              "RelativeDocumentMoniker": "CS\\NetworkModule.cs",
-              "ToolTip": "C:\\Users\\hbeau\\ScoreCode\\DevicesInterconnection\\Platform\\Windows\\CS\\NetworkModule.cs",
-              "RelativeToolTip": "CS\\NetworkModule.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAFUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T10:34:38.64Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "LinkNewModule.cs",
               "DocumentMoniker": "C:\\Users\\hbeau\\ScoreCode\\DevicesInterconnection\\Platform\\Windows\\CS\\LinkNewModule.cs",
               "RelativeDocumentMoniker": "CS\\LinkNewModule.cs",
               "ToolTip": "C:\\Users\\hbeau\\ScoreCode\\DevicesInterconnection\\Platform\\Windows\\CS\\LinkNewModule.cs",
               "RelativeToolTip": "CS\\LinkNewModule.cs",
-              "ViewState": "AQIAAE4AAAAAAAAAAAAUwEcAAAAJAAAA",
+              "ViewState": "AQIAADkAAAAAAAAAAAAYwEoAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-19T13:39:51.258Z"
+              "WhenOpened": "2024-08-19T13:39:51.258Z",
+              "EditorCaption": ""
             }
           ]
         }

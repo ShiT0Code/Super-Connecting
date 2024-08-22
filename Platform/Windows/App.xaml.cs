@@ -1,5 +1,6 @@
 ﻿using DevicesInterconnection.CS;
 using DevicesInterconnection.ViewModuls;
+using DevicesInterconnection.ViewModuls.LinkNew;
 using Microsoft.UI.Composition.SystemBackdrops;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
@@ -50,11 +51,6 @@ namespace DevicesInterconnection
             m_window.Title = "Main";
             m_window.SystemBackdrop = new MicaBackdrop() { Kind = MicaKind.Base };
             m_window.Activate();
-
-            /*Task.Run(async () =>
-            {
-                await LinkNewModule.CollectingDevices();
-            });*/
         }
 
         private Window m_window;

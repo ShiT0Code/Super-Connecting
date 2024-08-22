@@ -32,7 +32,7 @@
                 Grid.Row="2"/>
         <ItemsView
             Grid.Row="3"
-            ItemsSource="{x:Bind ViewModelWLN.WLNViewModel}"
+            ItemsSource="{x:Bind LinkNewViewModel1.ViewModelWLN1.WLNViewModel}"
             SelectionMode="Extended">
             <ItemsView.ItemTemplate>
                 <DataTemplate x:DataType="local:WaitingLinkingNewData">

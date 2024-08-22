@@ -27,13 +27,15 @@ namespace DevicesInterconnection.ViewModuls.LinkNew
         public WaitingToAdd()
         {
             this.InitializeComponent();
-            ViewModelWLN = new WaitingLinkingNewViewModel();
+            //ViewModelWLN = new WaitingLinkingNewViewModel();
+            LinkNewViewModel1 = new LinkNewViewModel();
         }
-        public WaitingLinkingNewViewModel ViewModelWLN { get; set; }
+        //public WaitingLinkingNewViewModel ViewModelWLN { get; set; }
+        public LinkNewViewModel LinkNewViewModel1 { get; set; }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            ViewModelWLN.WLNViewModel.Add(new WaitingLinkingNewData
+            LinkNewViewModel1.ViewModelWLN1.WLNViewModel.Add(new WaitingLinkingNewData
             {
                 Name = "A",
                 PIN = "jio",
