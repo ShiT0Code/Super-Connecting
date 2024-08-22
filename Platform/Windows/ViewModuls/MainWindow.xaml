@@ -40,9 +40,6 @@
                     </StackPanel>
                 </NavigationViewItem>
                 <NavigationViewItemHeader Content="添加设备"/>
-                <NavigationViewItem Tag="Waiting"
-                            Icon="Clock"
-                            Content="添加列表"/>
                 <NavigationViewItem Tag="LinkNew"
                             Icon="Link"
                             Content="添加新的设备"/>

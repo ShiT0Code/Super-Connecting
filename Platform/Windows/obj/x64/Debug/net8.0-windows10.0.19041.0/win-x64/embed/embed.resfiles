@@ -1,6 +1,6 @@
 App.xbf
-ViewModuls\LinkNew\ByPIN.xbf
 ViewModuls\LinkNew\BySend.xbf
+ViewModuls\LinkNew\WaitingToAdd.xbf
 ViewModuls\MainPages\Home.xbf
 ViewModuls\MainPages\LinkNewMain.xbf
 ViewModuls\MainWindow.xbf

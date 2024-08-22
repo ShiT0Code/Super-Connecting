@@ -42,7 +42,7 @@ namespace DevicesInterconnection.ViewModuls.MainPages
                     frame1.Navigate(typeof(BySend));
                     break;
                 case 2:
-                    frame1.Navigate(typeof(ByPIN));
+                    frame1.Navigate(typeof(WaitingToAdd));
                     break;
             }
         }

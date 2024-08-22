@@ -20,8 +20,7 @@
             <InfoBar x:ConnectionId='2' IsOpen="False"
                 Severity="Success"
                 x:Name="SendResu"
-                Title="发送成功"
-                Message="设备配对码发送成功！设备配对码为："/>
+                Title="发送成功"/>
             <RichTextBlock>
                 <Paragraph>
                     点击下面的发送按钮以发送请求，并在要添加的设备上接收请求信息，
@@ -43,16 +42,22 @@
                         <CheckBox x:ConnectionId='4' x:Name="ched_IP">
                             <StackPanel Spacing="8">
                                 <TextBlock Text="指定接收设备的局域网 IP 地址："/>
-                                <TextBox x:ConnectionId='7' PlaceholderText="接收设备的局域网 IP 地址"
+                                <TextBox x:ConnectionId='9' PlaceholderText="接收设备的局域网 IP 地址"
                                          x:Name="setIP"/>
                             </StackPanel>
                         </CheckBox>
-                        <CheckBox x:ConnectionId='5' x:Name="ched_Port"
-                                  IsChecked="True">
+                        <CheckBox x:ConnectionId='5' x:Name="ched_Port">
                             <StackPanel Spacing="8">
                                 <TextBlock Text="指定使用此设备的端口："/>
-                                <TextBox x:ConnectionId='6' PlaceholderText="使用此设备端口"
+                                <TextBox x:ConnectionId='8' PlaceholderText="使用此设备端口"
                                          x:Name="setPort"/>
+                            </StackPanel>
+                        </CheckBox>
+                        <CheckBox x:ConnectionId='6' x:Name="ched_PIN">
+                            <StackPanel Spacing="8">
+                                <TextBlock Text="指定使用此配对码："/>
+                                <TextBox x:ConnectionId='7' PlaceholderText="使用此配对码"
+                 x:Name="setPIN"/>
                             </StackPanel>
                         </CheckBox>
                     </StackPanel>

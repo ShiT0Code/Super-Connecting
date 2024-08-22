@@ -18,6 +18,7 @@
     <None Remove="Home.xaml" />
     <None Remove="LinkNewMain.xaml" />
     <None Remove="ViewModuls\LinkNew\BySend.xaml" />
+    <None Remove="ViewModuls\LinkNew\WaitingToAdd.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -66,6 +67,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ViewModuls\MainPages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="ViewModuls\LinkNew\WaitingToAdd.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
 
   <!--

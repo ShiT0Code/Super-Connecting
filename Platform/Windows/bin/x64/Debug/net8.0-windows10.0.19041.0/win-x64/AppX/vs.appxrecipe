@@ -30,29 +30,29 @@
     <AppXManifest Include="C:\Users\hbeau\ScoreCode\DevicesInterconnection\Platform\Windows\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-08-19T13:29:06.347</Modified>
+      <Modified>2024-08-22T04:33:30.104</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\hbeau\ScoreCode\DevicesInterconnection\Platform\Windows\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-08-19T13:29:05.690</Modified>
+      <Modified>2024-08-22T04:33:29.338</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hbeau\ScoreCode\DevicesInterconnection\Platform\Windows\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\DevicesInterconnection.runtimeconfig.json">
       <PackagePath>DevicesInterconnection.runtimeconfig.json</PackagePath>
-      <Modified>2024-08-19T13:07:08.979</Modified>
+      <Modified>2024-08-19T14:51:02.438</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hbeau\ScoreCode\DevicesInterconnection\Platform\Windows\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\DevicesInterconnection.dll">
       <PackagePath>DevicesInterconnection.dll</PackagePath>
-      <Modified>2024-08-19T13:29:04.272</Modified>
+      <Modified>2024-08-22T04:33:28.477</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hbeau\ScoreCode\DevicesInterconnection\Platform\Windows\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\apphost.exe">
       <PackagePath>DevicesInterconnection.exe</PackagePath>
-      <Modified>2024-08-19T13:29:04.376</Modified>
+      <Modified>2024-08-22T04:33:28.633</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hbeau\ScoreCode\DevicesInterconnection\Platform\Windows\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\DevicesInterconnection.deps.json">
       <PackagePath>DevicesInterconnection.deps.json</PackagePath>
-      <Modified>2024-08-19T13:29:05.159</Modified>
+      <Modified>2024-08-21T10:17:43.573</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hbeau\.nuget\packages\microsoft.netcore.app.runtime.win-x64\8.0.8\runtimes\win-x64\lib\net8.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>

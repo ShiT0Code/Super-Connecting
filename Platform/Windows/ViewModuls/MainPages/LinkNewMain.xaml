@@ -9,29 +9,31 @@
     mc:Ignorable="d"
     Loaded="Page_Loaded">
 
-    <Grid Padding="22">
+    <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"/>
             <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
         <TextBlock Text="添加方法："
                    FontWeight="Bold"
-                   VerticalAlignment="Center"/>
+                   VerticalAlignment="Center"
+                   Grid.Column="1"/>
         <SelectorBar SelectionChanged="SelectorBar_SelectionChanged"
-                     Grid.Column="1"
+                     Grid.Column="2"
                      x:Name="SelBar">
             <SelectorBarItem/>
             <SelectorBarItem Text="发送配对请求"/>
-            <SelectorBarItem Text="使用配对码"/>
+            <SelectorBarItem Text="同意要添加的设备"/>
         </SelectorBar>
 
         <Frame x:Name="frame1" Grid.Row="1"
-               Grid.ColumnSpan="2" CornerRadius="12"
+               Grid.ColumnSpan="3"
                Background="{ThemeResource LayerOnMicaBaseAltFillColorDefaultBrush}"
                Padding="14"/>
     </Grid>

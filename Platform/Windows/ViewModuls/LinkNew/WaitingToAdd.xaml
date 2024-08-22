@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="DevicesInterconnection.ViewModuls.LinkNew.WaitingToAdd"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DevicesInterconnection.ViewModuls.LinkNew"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid RowSpacing="8">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock FontSize="22"
+                   FontWeight="Bold"
+                   Text="这些设备想要与你的设备互联"/>
+        <InfoBar
+            IsOpen="True"
+            Grid.Row="1"
+            Severity="Warning"
+            IsClosable="False"
+            Title="请注意："
+            Message="请根据下面展示出来的设备信息以及配对码来确认配对设备，请仔细甄别这是不是你要添加的设备，
+不要添加陌生设备，注意保护你的数据安全！"/>
+        <Button Click="Button_Click"
+                Content="+++"
+                Grid.Row="2"/>
+        <ItemsView
+            Grid.Row="3"
+            ItemsSource="{x:Bind ViewModelWLN.WLNViewModel}"
+            SelectionMode="Extended">
+            <ItemsView.ItemTemplate>
+                <DataTemplate x:DataType="local:WaitingLinkingNewData">
+                    <ItemContainer>
+                        <Grid Width="250">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="200"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+
+                            <TextBlock FontSize="18"
+                                       Grid.Row="1"
+                                       Text="{x:Bind Name}"
+                                       HorizontalAlignment="Center"/>
+                            <TextBlock Text="{x:Bind PIN}"
+                                       Grid.Row="2"
+                                       HorizontalAlignment="Center"/>
+                            <HyperlinkButton Grid.Row="3"
+                                             Content="详细信息"
+                                             HorizontalAlignment="Center"/>
+                        </Grid>
+                    </ItemContainer>
+                </DataTemplate>
+            </ItemsView.ItemTemplate>
+            <ItemsView.Layout>
+                <LinedFlowLayout ItemsStretch="Fill" LineHeight="330"
+                                 LineSpacing="5" MinItemSpacing="4"/>
+            </ItemsView.Layout>
+        </ItemsView>
+    </Grid>
+</Page>

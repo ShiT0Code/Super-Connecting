@@ -50,9 +50,6 @@ namespace DevicesInterconnection.ViewModuls
                     case "MyDe":
                         sender.Header = "我的设备";
                         break;
-                    case "Waiting":
-                        sender.Header = "添加列表";
-                        break;
                     case "LinkNew":
                         sender.Header = "添加新的设备";
                         frame.Navigate(typeof(LinkNewMain));
