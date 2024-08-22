@@ -46,13 +46,6 @@
                                          x:Name="setIP"/>
                             </StackPanel>
                         </CheckBox>
-                        <CheckBox x:Name="ched_Port">
-                            <StackPanel Spacing="8">
-                                <TextBlock Text="指定使用此设备的端口："/>
-                                <TextBox PlaceholderText="使用此设备端口"
-                                         x:Name="setPort"/>
-                            </StackPanel>
-                        </CheckBox>
                         <CheckBox x:Name="ched_PIN">
                             <StackPanel Spacing="8">
                                 <TextBlock Text="指定使用此配对码："/>

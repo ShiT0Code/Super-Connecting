@@ -2,6 +2,7 @@
 using Microsoft.Windows.AppNotifications;
 using Microsoft.Windows.AppNotifications.Builder;
 using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Runtime.InteropServices;
 using System.Threading.Tasks;
@@ -10,7 +11,7 @@ namespace DevicesInterconnection.CS
 {
     public class LinkNewModule
     {
-        public static async Task StartLinking(string ip,string PIN)
+        public static async Task StartLinking(string ip, string PIN)
         {
             string DevicesType = "Desktop PC";
             string Brand = "Micosoft";
@@ -47,7 +48,7 @@ namespace DevicesInterconnection.CS
             while (RecePIN != PIN && IsFinish);
 
             string ReceName = KeyWords[3];
-            string IsAccept = KeyWords[0];                
+            string IsAccept = KeyWords[0];
 
             DateTime ReceTime;
             DateTime.TryParse(KeyWords[2], out ReceTime);
@@ -68,6 +69,48 @@ namespace DevicesInterconnection.CS
                         .AddText($"在与设备{ReceName}配对时用时超时，请再试一次！");
                     AppNotificationManager.Default.Show(not1.BuildNotification());
                 }
+            }
+        }
+
+
+
+        public static List<List<string>> CollectInfos = new();
+
+        public static async Task CollectingDevices()
+        {
+
+            while (true)
+            {
+                string CollectedInfo = await NetworkModule.InNetReceiveReplies(12568);
+
+                if (CollectedInfo.StartsWith("Error"))
+                {
+                    continue;
+                }
+
+                string[] KeyWords = CollectedInfo.Split(',');
+
+                string type = KeyWords[0];
+
+                if (type == "B" || type == "C")
+                {
+                    continue;
+                }
+
+                List<string> Infos = new()
+                {
+                    KeyWords[3],
+                    KeyWords[1],
+                    KeyWords[4],
+                    KeyWords[5],
+                    KeyWords[2],
+                    KeyWords[6]
+                };
+
+                CollectInfos.Add(Infos);
+
+
+                await Task.Delay(10000);
             }
         }
     }

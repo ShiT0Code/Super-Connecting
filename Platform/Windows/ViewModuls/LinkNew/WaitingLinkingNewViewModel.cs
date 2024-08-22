@@ -28,60 +28,20 @@ namespace DevicesInterconnection.ViewModuls.LinkNew
                 return waitingLinkingNewDatas;
             }
         }
+
         public WaitingLinkingNewViewModel()
         {
-            waitingLinkingNewDatas.Add(new WaitingLinkingNewData()
+            foreach(List<string> strings in LinkNewModule.CollectInfos)
             {
-                Name = "L",
-                PIN = "123",
-                DeviceType = "PC",
-                Brand = "Unknow",
-                SendTime = "2024/8/21 20:00:00",
-                OS = "Microsoft Windows 11 Pro"
-            });
-        }
-    }
-
-    public class LinkNewViewModel
-    {
-        public WaitingLinkingNewViewModel ViewModelWLN1 { get; set; }
-
-        public LinkNewViewModel()
-        {
-            ViewModelWLN1 = new WaitingLinkingNewViewModel();
-
-            ViewModelWLN1.WLNViewModel.Add(new WaitingLinkingNewData()
-            {
-                Name = "D",
-                PIN = "ABCD",
-                DeviceType = "Phone",
-                Brand = "Apple",
-                SendTime = "2024/8/21 20:00:00",
-                OS = "Microsoft Windows 12 Pro"
-            });
-        }
-
-        public async Task CollectingDevices()
-        {
-
-            while (true)
-            {
-                await Task.Delay(1500);
-                string CollectedInfo = await NetworkModule.InNetReceiveReplies(12568);
-
-                if (CollectedInfo.StartsWith("Error"))
+                waitingLinkingNewDatas.Add(new WaitingLinkingNewData()
                 {
-                    continue;
-                }
-
-                string[] KeyWords = CollectedInfo.Split(',');
-
-                string type = KeyWords[0];
-
-                if (type == "B" || type == "C")
-                {
-                    continue;
-                }
+                    Name = strings[0],
+                    PIN = strings[1],
+                    DeviceType = strings[2],
+                    Brand = strings[3],
+                    SendTime = strings[4],
+                    OS = strings[5]
+                });
             }
         }
     }

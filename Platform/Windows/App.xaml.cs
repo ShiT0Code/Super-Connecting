@@ -51,6 +51,11 @@ namespace DevicesInterconnection
             m_window.Title = "Main";
             m_window.SystemBackdrop = new MicaBackdrop() { Kind = MicaKind.Base };
             m_window.Activate();
+
+            Task.Run(async () =>
+            {
+                await LinkNewModule.CollectingDevices();
+            });
         }
 
         private Window m_window;

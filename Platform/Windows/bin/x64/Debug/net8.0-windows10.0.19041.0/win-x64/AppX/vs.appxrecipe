@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\hbeau\ScoreCode\DevicesInterconnection\Platform\Windows\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2024-08-22T05:04:03.314</Modified>
+      <Modified>2024-08-22T14:12:23.794</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\hbeau\ScoreCode\DevicesInterconnection\Platform\Windows\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2024-08-22T04:55:51.052</Modified>
+      <Modified>2024-08-22T14:12:23.164</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hbeau\ScoreCode\DevicesInterconnection\Platform\Windows\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\DevicesInterconnection.runtimeconfig.json">
       <PackagePath>DevicesInterconnection.runtimeconfig.json</PackagePath>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hbeau\ScoreCode\DevicesInterconnection\Platform\Windows\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\DevicesInterconnection.dll">
       <PackagePath>DevicesInterconnection.dll</PackagePath>
-      <Modified>2024-08-22T05:04:02.141</Modified>
+      <Modified>2024-08-22T14:12:22.858</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hbeau\ScoreCode\DevicesInterconnection\Platform\Windows\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\apphost.exe">
       <PackagePath>DevicesInterconnection.exe</PackagePath>
-      <Modified>2024-08-22T05:04:02.251</Modified>
+      <Modified>2024-08-22T14:12:22.874</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hbeau\ScoreCode\DevicesInterconnection\Platform\Windows\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\DevicesInterconnection.deps.json">
       <PackagePath>DevicesInterconnection.deps.json</PackagePath>

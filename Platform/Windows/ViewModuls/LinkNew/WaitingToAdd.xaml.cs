@@ -27,21 +27,9 @@ namespace DevicesInterconnection.ViewModuls.LinkNew
         public WaitingToAdd()
         {
             this.InitializeComponent();
-            LinkNewViewModel1 = new LinkNewViewModel();
+            LinkNewViewModel1 = new WaitingLinkingNewViewModel();
         }
-        public LinkNewViewModel LinkNewViewModel1 { get; set; }
+        public WaitingLinkingNewViewModel LinkNewViewModel1 { get; set; }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            LinkNewViewModel1.ViewModelWLN1.WLNViewModel.Add(new WaitingLinkingNewData
-            {
-                Name = "A",
-                PIN = "jio",
-                DeviceType = "Phone",
-                Brand = "Microsoft",
-                SendTime = "2024/8/32 25:00:00",
-                OS = "Microsoft Windows 12 Pro"
-            });
-        }
     }
 }
