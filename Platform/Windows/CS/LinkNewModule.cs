@@ -71,6 +71,4 @@ namespace DevicesInterconnection.CS
             }
         }
     }
-
-    
 }
