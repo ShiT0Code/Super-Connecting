@@ -31,7 +31,16 @@ namespace DevicesInterconnection.ViewModuls.LinkNew
 
         public WaitingLinkingNewViewModel()
         {
-            foreach(List<string> strings in LinkNewModule.CollectInfos)
+            waitingLinkingNewDatas.Add(new WaitingLinkingNewData()
+            {
+                Name = "strings[0]",
+                PIN = "strings[1]",
+                DeviceType = "strings[2]",
+                Brand = "strings[3]",
+                SendTime = "strings[4]",
+                OS = "strings[5]"
+            });
+            foreach (List<string> strings in LinkNewModule.CollectInfos)
             {
                 waitingLinkingNewDatas.Add(new WaitingLinkingNewData()
                 {

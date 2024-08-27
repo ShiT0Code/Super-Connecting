@@ -8,17 +8,19 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid RowSpacing="8">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
+    <ScrollViewer>
+        <Grid RowSpacing="8">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
 
-        <TextBlock FontSize="22"
+            <TextBlock FontSize="22"
                    FontWeight="Bold"
                    Text="这些设备想要与你的设备互联"/>
-        <InfoBar
+            <InfoBar
             IsOpen="True"
             Grid.Row="1"
             Severity="Warning"
@@ -26,89 +28,10 @@
             Title="请注意："
             Message="请根据下面展示出来的设备信息以及配对码来确认配对设备，请仔细甄别这是不是你要添加的设备，
 不要添加陌生设备，注意保护你的数据安全！"/>
-        <ItemsView
-            Grid.Row="2"
-            ItemsSource="{x:Bind LinkNewViewModel1.WLNViewModel}"
-            SelectionMode="Single">
-            <ItemsView.ItemTemplate>
-                <DataTemplate x:DataType="local:WaitingLinkingNewData">
-                    <ItemContainer>
-                        <Grid Width="250" Background="{StaticResource LayerOnMicaBaseAltFillColorSecondary}"
-                              BorderBrush="Black">
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="200"/>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="Auto"/>
-                                <RowDefinition Height="Auto"/>
-                            </Grid.RowDefinitions>
 
-                            <TextBlock FontSize="18"
-                                       Grid.Row="1"
-                                       Text="{x:Bind Name}"
-                                       HorizontalAlignment="Center"/>
-                            <TextBlock Text="{x:Bind PIN}"
-                                       Grid.Row="2"
-                                       HorizontalAlignment="Center"/>
-                            <Button Grid.Row="3"
-                                    Content="详细信息"
-                                    HorizontalAlignment="Center"
-                                    Background="Transparent"
-                                    Foreground="{ThemeResource AccentAAFillColorSecondaryBrush}"
-                                    BorderBrush="Transparent">
-                                <Button.Flyout>
-                                    <Flyout ShowMode="Standard" x:Name="FLy">
-                                        <Grid ColumnSpacing="2" RowSpacing="2">
-                                            <Grid.RowDefinitions>
-                                                <RowDefinition Height="Auto"/>
-                                                <RowDefinition Height="Auto"/>
-                                                <RowDefinition Height="Auto"/>
-                                                <RowDefinition Height="Auto"/>
-                                                <RowDefinition Height="Auto"/>
-                                                <RowDefinition Height="Auto"/>
-                                                <RowDefinition Height="Auto"/>
-                                                <RowDefinition Height="Auto"/>
-                                            </Grid.RowDefinitions>
-                                            <Grid.ColumnDefinitions>
-                                                <ColumnDefinition Width="Auto"/>
-                                                <ColumnDefinition Width="Auto"/>
-                                            </Grid.ColumnDefinitions>
+            <TextBlock x:Name="AD" Grid.Row="3"/>
 
-                                            <TextBlock Text="设备详细信息"
-                                                       FontWeight="Bold"
-                                                       HorizontalAlignment="Center"
-                                                       Grid.ColumnSpan="2"/>
 
-                                            <TextBlock Text="设备名称：" Grid.Row="1"/>
-                                            <TextBlock Text="设备配对码：" Grid.Row="2"/>
-                                            <TextBlock Text="设备类型：" Grid.Row="3"/>
-                                            <TextBlock Text="开始请求时间：" Grid.Row="4"/>
-                                            <TextBlock Text="品牌：" Grid.Row="5"/>
-                                            <TextBlock Text="操作系统：" Grid.Row="6"/>
-
-                                            <TextBlock Text="{x:Bind Name}" Grid.Column="1" Grid.Row="1"/>
-                                            <TextBlock Text="{x:Bind PIN}" Grid.Column="1" Grid.Row="2"/>
-                                            <TextBlock Text="{x:Bind DeviceType}" Grid.Column="1" Grid.Row="3"/>
-                                            <TextBlock Text="{x:Bind SendTime}" Grid.Column="1" Grid.Row="4"/>
-                                            <TextBlock Text="{x:Bind Brand}" Grid.Column="1" Grid.Row="5"/>
-                                            <TextBlock Text="{x:Bind OS}" Grid.Column="1" Grid.Row="6"/>
-                                            
-                                            <Button Content="确定" Grid.Row="7"/>
-                                                
-                                            <Button Style="{ThemeResource AccentButtonStyle}"
-                                                    Content="确认配对"
-                                                    Grid.Row="7"
-                                                    Grid.Column="1"/>
-                                        </Grid>
-                                    </Flyout>
-                                </Button.Flyout>
-                            </Button>
-                        </Grid>
-                    </ItemContainer>
-                </DataTemplate>
-            </ItemsView.ItemTemplate>
-            <ItemsView.Layout>
-                <LinedFlowLayout ItemsStretch="Fill" LineHeight="330" LineSpacing="5" MinItemSpacing="5"/>
-            </ItemsView.Layout>
-        </ItemsView>
-    </Grid>
+        </Grid>
+    </ScrollViewer>
 </Page>

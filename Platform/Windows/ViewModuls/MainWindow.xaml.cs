@@ -1,4 +1,5 @@
 using DevicesInterconnection.ViewModuls.MainPages;
+using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Controls.Primitives;
@@ -27,38 +28,43 @@ namespace DevicesInterconnection.ViewModuls
         public MainWindow()
         {
             this.InitializeComponent();
+
+            ExtendsContentIntoTitleBar = true;
+
+            if (ExtendsContentIntoTitleBar == true)
+            {
+                this.AppWindow.TitleBar.PreferredHeightOption = TitleBarHeightOption.Tall;
+            }
+
             SetTitleBar(titleBar);
         }
 
         private void Nav_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
         {
-            if(args.IsSettingsSelected)
+            var Item = (Microsoft.UI.Xaml.Controls.NavigationViewItem)args.SelectedItem;
+            string Tag = ((string)Item.Tag);
+            switch(Tag)
             {
-                sender.Header = "设置";
-
+                case "Home":
+                    Header.Text = "主页";
+                    frame.Navigate(typeof(Home));
+                    break;
+                case "My":
+                    Header.Text = "我的设备";
+                    break;
+                case "Add":
+                    Header.Text = "添加新的设备";
+                    frame.Navigate(typeof(LinkNewMain));
+                    break;
+                case "Settings":
+                    Header.Text = "设置";
+                    //frame.Navigate(typeof(LinkNewMain));
+                    break;
             }
-            else
-            {
-                var Item = (Microsoft.UI.Xaml.Controls.NavigationViewItem)args.SelectedItem;
-                string Tag = ((string)Item.Tag);
-                switch(Tag)
-                {
-                    case "Home":
-                        sender.Header = "主页";
-                        frame.Navigate(typeof(Home));
-                        break;
-                    case "MyDe":
-                        sender.Header = "我的设备";
-                        break;
-                    case "LinkNew":
-                        sender.Header = "添加新的设备";
-                        frame.Navigate(typeof(LinkNewMain));
-                        break;
-                }
-            }
+            
         }
 
-        private void frame_Loaded(object sender, RoutedEventArgs e)
+        private void Nav_Loaded(object sender, RoutedEventArgs e)
         {
             Nav.SelectedItem = Nav.MenuItems[0];
             Nav.TabIndex = 0;

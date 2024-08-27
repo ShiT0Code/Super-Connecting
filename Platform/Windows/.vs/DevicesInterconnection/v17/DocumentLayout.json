@@ -11,24 +11,20 @@
       "RelativeMoniker": "D:0:0:{BD3F5BAB-B9FF-4841-BF0A-479465851859}|DevicesInterconnection.csproj|solutionrelative:viewmoduls\\linknew\\waitingtoadd.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD3F5BAB-B9FF-4841-BF0A-479465851859}|DevicesInterconnection.csproj|c:\\users\\hbeau\\scorecode\\devicesinterconnection\\platform\\windows\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD3F5BAB-B9FF-4841-BF0A-479465851859}|DevicesInterconnection.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BD3F5BAB-B9FF-4841-BF0A-479465851859}|DevicesInterconnection.csproj|c:\\users\\hbeau\\scorecode\\devicesinterconnection\\platform\\windows\\cs\\linknewmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD3F5BAB-B9FF-4841-BF0A-479465851859}|DevicesInterconnection.csproj|solutionrelative:cs\\linknewmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BD3F5BAB-B9FF-4841-BF0A-479465851859}|DevicesInterconnection.csproj|c:\\users\\hbeau\\scorecode\\devicesinterconnection\\platform\\windows\\viewmoduls\\linknew\\waitinglinkingnewviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD3F5BAB-B9FF-4841-BF0A-479465851859}|DevicesInterconnection.csproj|solutionrelative:viewmoduls\\linknew\\waitinglinkingnewviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{BD3F5BAB-B9FF-4841-BF0A-479465851859}|DevicesInterconnection.csproj|c:\\users\\hbeau\\scorecode\\devicesinterconnection\\platform\\windows\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD3F5BAB-B9FF-4841-BF0A-479465851859}|DevicesInterconnection.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BD3F5BAB-B9FF-4841-BF0A-479465851859}|DevicesInterconnection.csproj|c:\\users\\hbeau\\scorecode\\devicesinterconnection\\platform\\windows\\viewmoduls\\linknew\\bysend.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{BD3F5BAB-B9FF-4841-BF0A-479465851859}|DevicesInterconnection.csproj|solutionrelative:viewmoduls\\linknew\\bysend.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD3F5BAB-B9FF-4841-BF0A-479465851859}|DevicesInterconnection.csproj|c:\\users\\hbeau\\scorecode\\devicesinterconnection\\platform\\windows\\viewmoduls\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD3F5BAB-B9FF-4841-BF0A-479465851859}|DevicesInterconnection.csproj|solutionrelative:viewmoduls\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD3F5BAB-B9FF-4841-BF0A-479465851859}|DevicesInterconnection.csproj|c:\\users\\hbeau\\scorecode\\devicesinterconnection\\platform\\windows\\cs\\linknewmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD3F5BAB-B9FF-4841-BF0A-479465851859}|DevicesInterconnection.csproj|solutionrelative:cs\\linknewmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 155,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -47,19 +43,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\hbeau\\ScoreCode\\DevicesInterconnection\\Platform\\Windows\\ViewModuls\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "ViewModuls\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\hbeau\\ScoreCode\\DevicesInterconnection\\Platform\\Windows\\ViewModuls\\MainWindow.xaml.cs",
-              "RelativeToolTip": "ViewModuls\\MainWindow.xaml.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAQwCkAAABFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-22T13:39:24.645Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "BySend.xaml",
               "DocumentMoniker": "C:\\Users\\hbeau\\ScoreCode\\DevicesInterconnection\\Platform\\Windows\\ViewModuls\\LinkNew\\BySend.xaml",
               "RelativeDocumentMoniker": "ViewModuls\\LinkNew\\BySend.xaml",
@@ -72,13 +55,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\hbeau\\ScoreCode\\DevicesInterconnection\\Platform\\Windows\\App.xaml.cs",
               "RelativeDocumentMoniker": "App.xaml.cs",
               "ToolTip": "C:\\Users\\hbeau\\ScoreCode\\DevicesInterconnection\\Platform\\Windows\\App.xaml.cs",
               "RelativeToolTip": "App.xaml.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAAYwD8AAAAAAAAA",
+              "ViewState": "AQIAACAAAAAAAAAAAAAYwDQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-21T13:23:08.175Z",
               "EditorCaption": ""
@@ -91,7 +74,7 @@
               "RelativeDocumentMoniker": "ViewModuls\\LinkNew\\WaitingToAdd.xaml.cs",
               "ToolTip": "C:\\Users\\hbeau\\ScoreCode\\DevicesInterconnection\\Platform\\Windows\\ViewModuls\\LinkNew\\WaitingToAdd.xaml.cs",
               "RelativeToolTip": "ViewModuls\\LinkNew\\WaitingToAdd.xaml.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAuwCAAAAAAAAAA",
+              "ViewState": "AQIAABcAAAAAAAAAAAAmwCAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-21T13:18:29.059Z",
               "EditorCaption": ""
@@ -104,7 +87,7 @@
               "RelativeDocumentMoniker": "ViewModuls\\LinkNew\\WaitingToAdd.xaml",
               "ToolTip": "C:\\Users\\hbeau\\ScoreCode\\DevicesInterconnection\\Platform\\Windows\\ViewModuls\\LinkNew\\WaitingToAdd.xaml",
               "RelativeToolTip": "ViewModuls\\LinkNew\\WaitingToAdd.xaml",
-              "ViewState": "AQIAAE4AAAAAAAAAAAAkwFEAAABTAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAkwCMAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-08-21T10:17:02.61Z",
               "EditorCaption": ""
@@ -117,20 +100,20 @@
               "RelativeDocumentMoniker": "ViewModuls\\LinkNew\\WaitingLinkingNewViewModel.cs",
               "ToolTip": "C:\\Users\\hbeau\\ScoreCode\\DevicesInterconnection\\Platform\\Windows\\ViewModuls\\LinkNew\\WaitingLinkingNewViewModel.cs",
               "RelativeToolTip": "ViewModuls\\LinkNew\\WaitingLinkingNewViewModel.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA4AAAAWAAAA",
+              "ViewState": "AQIAABQAAAAAAAAAAAA9wCgAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-21T12:00:33.038Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "LinkNewModule.cs",
               "DocumentMoniker": "C:\\Users\\hbeau\\ScoreCode\\DevicesInterconnection\\Platform\\Windows\\CS\\LinkNewModule.cs",
               "RelativeDocumentMoniker": "CS\\LinkNewModule.cs",
               "ToolTip": "C:\\Users\\hbeau\\ScoreCode\\DevicesInterconnection\\Platform\\Windows\\CS\\LinkNewModule.cs",
               "RelativeToolTip": "CS\\LinkNewModule.cs",
-              "ViewState": "AQIAAGMAAAAAAAAAAAAYwE4AAAAVAAAA",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAYwE4AAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-19T13:39:51.258Z",
               "EditorCaption": ""

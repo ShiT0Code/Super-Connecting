@@ -47,9 +47,10 @@ namespace DevicesInterconnection
         protected override void OnLaunched(Microsoft.UI.Xaml.LaunchActivatedEventArgs args)
         {
             m_window = new MainWindow();
-            m_window.ExtendsContentIntoTitleBar = true;
+            
             m_window.Title = "Main";
             m_window.SystemBackdrop = new MicaBackdrop() { Kind = MicaKind.Base };
+
             m_window.Activate();
 
             Task.Run(async () =>

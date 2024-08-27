@@ -11,24 +11,31 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="48"/>
+            <RowDefinition Height="72"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Grid x:Name="titleBar">
-            <StackPanel Orientation="Horizontal"
-                        Spacing="8" Padding="8">
-                <Image Source="Assets\StoreLogo.png"
-                       Height="30" Width="30" VerticalAlignment="Center"/>
-                <TextBlock Text="Main" VerticalAlignment="Center"/>
-            </StackPanel>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="98"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid x:Name="titleBar" Grid.ColumnSpan="2">
+            
         </Grid>
         
         <NavigationView Grid.Row="1"
-                x:Name="Nav"
-                SelectionChanged="Nav_SelectionChanged"
-                AlwaysShowHeader="True"
-                IsBackButtonVisible="Collapsed">
-            <NavigationView.MenuItems>
+                        Grid.RowSpan="2"
+                        x:Name="Nav"
+                        SelectionChanged="Nav_SelectionChanged"
+                        IsBackButtonVisible="Collapsed"
+                        OpenPaneLength="98"
+                        IsSettingsVisible="False"
+                        IsPaneOpen="True"
+                        PaneDisplayMode="Left"
+                        IsPaneToggleButtonVisible="False"
+                        Loaded="Nav_Loaded">
+            <!--NavigationView.MenuItems>
                 <NavigationViewItem Icon="Home"
                             Content="主页"
                             Tag="Home"/>
@@ -39,12 +46,49 @@
                         <TextBlock Text="我的设备"/>
                     </StackPanel>
                 </NavigationViewItem>
-                <NavigationViewItemHeader Content="添加设备"/>
                 <NavigationViewItem Tag="LinkNew"
                             Icon="Link"
                             Content="添加新的设备"/>
+            </NavigationView.MenuItems-->
+            <NavigationView.MenuItems>
+                <NavigationViewItem Tag="Home" Height="84" Width="98">
+                    <StackPanel>
+                        <FontIcon Glyph="&#xE80F;"/>
+                        <TextBlock Text="主页" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </NavigationViewItem>
+
+                <NavigationViewItem Tag="My" Height="84" Width="98" Padding="0">
+                    <StackPanel>
+                        <FontIcon Glyph="&#xE975;" />
+                        <TextBlock Text="我的设备"/>
+                    </StackPanel>
+                </NavigationViewItem>
+
+                <NavigationViewItem Tag="Add" Height="84" Width="98">
+                    <StackPanel>
+                        <FontIcon Glyph="&#xE710;"/>
+                        <TextBlock Text="添加设备"/>
+                    </StackPanel>
+                </NavigationViewItem>
             </NavigationView.MenuItems>
-            <Frame x:Name="frame" Loaded="frame_Loaded"/>
+
+            <NavigationView.FooterMenuItems>
+                <NavigationViewItem Tag="Settings" Height="84" Width="98">
+                    <StackPanel>
+                        <FontIcon Glyph="&#xE713;"/>
+                        <TextBlock Text="设置" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </NavigationViewItem>
+            </NavigationView.FooterMenuItems>
         </NavigationView>
+
+        <TextBlock x:Name="Header"
+                   Grid.Column="1"
+                   Grid.Row="1"
+                   FontWeight="Bold"
+                   FontSize="32"/>
+
+        <Frame x:Name="frame" Grid.Column="1" Grid.Row="2"/>
     </Grid>
 </Window>
