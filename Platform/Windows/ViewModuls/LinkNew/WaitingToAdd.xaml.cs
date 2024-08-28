@@ -31,5 +31,42 @@ namespace DevicesInterconnection.ViewModuls.LinkNew
         }
         public WaitingLinkingNewViewModel LinkNewViewModel1 { get; set; }
 
+
+
+        private void ItemsView_ItemInvoked(ItemsView sender, ItemsViewItemInvokedEventArgs e)
+        {
+            AD.Text = "You invoked " + (e.InvokedItem as WaitingLinkingNewData).Name + ".";
+
+            DeName.Text = (e.InvokedItem as WaitingLinkingNewData).Name;
+            DeType.Text = (e.InvokedItem as WaitingLinkingNewData).DeviceType;
+            PINcode.Text = (e.InvokedItem as WaitingLinkingNewData).PIN;
+            SendT.Text = (e.InvokedItem as WaitingLinkingNewData).SendTime;
+            DeOS.Text = (e.InvokedItem as WaitingLinkingNewData).OS;
+            DeBrand.Text = (e.InvokedItem as WaitingLinkingNewData).Brand;
+        }
+
+        private async void Accect_Button_Click(object sender, RoutedEventArgs e)
+        {
+            ContentDialog dialog = new()
+            {
+                XamlRoot = this.XamlRoot,
+                Title = "确认配对？",
+                Content = $"你正在与设备 {DeName.Text} 进行配对，确认配对吗？",
+                PrimaryButtonText = "确认配对",
+                CloseButtonText = "取消",
+                DefaultButton = ContentDialogButton.Primary
+            };
+
+            ContentDialogResult result = await dialog.ShowAsync();
+
+            if(result==ContentDialogResult.Primary)
+            {
+
+            }
+            else
+            {
+
+            }
+        }
     }
 }

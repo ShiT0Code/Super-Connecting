@@ -13,6 +13,7 @@ namespace DevicesInterconnection.CS
     {
         public static async Task StartLinking(string ip, string PIN)
         {
+            //Some Data is only for Test.
             string DevicesType = "Desktop PC";
             string Brand = "Micosoft";
             DateTime SendTime = DateTime.Now;
