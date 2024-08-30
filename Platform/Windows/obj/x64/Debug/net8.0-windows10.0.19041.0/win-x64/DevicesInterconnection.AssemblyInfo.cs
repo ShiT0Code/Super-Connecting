@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DevicesInterconnection")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+19c23c261452203d98b23589d7e34786f58ece83")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8c7c9c8e534bfc707d35d8bde45b709ceeab54c4")]
 [assembly: System.Reflection.AssemblyProductAttribute("DevicesInterconnection")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DevicesInterconnection")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

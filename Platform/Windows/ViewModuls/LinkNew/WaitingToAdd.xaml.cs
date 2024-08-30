@@ -6,6 +6,8 @@ using Microsoft.UI.Xaml.Data;
 using Microsoft.UI.Xaml.Input;
 using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Navigation;
+using Microsoft.Windows.AppNotifications.Builder;
+using Microsoft.Windows.AppNotifications;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -13,6 +15,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using System.Threading.Tasks;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -35,8 +38,6 @@ namespace DevicesInterconnection.ViewModuls.LinkNew
 
         private void ItemsView_ItemInvoked(ItemsView sender, ItemsViewItemInvokedEventArgs e)
         {
-            AD.Text = "You invoked " + (e.InvokedItem as WaitingLinkingNewData).Name + ".";
-
             DeName.Text = (e.InvokedItem as WaitingLinkingNewData).Name;
             DeType.Text = (e.InvokedItem as WaitingLinkingNewData).DeviceType;
             PINcode.Text = (e.InvokedItem as WaitingLinkingNewData).PIN;
@@ -59,13 +60,23 @@ namespace DevicesInterconnection.ViewModuls.LinkNew
 
             ContentDialogResult result = await dialog.ShowAsync();
 
+            string DevicesName = DeName.Text;
+
+            Sent.Message = $"已向设备 {DevicesName} 发送通知";
+            Sent.IsOpen = true;
+
             if(result==ContentDialogResult.Primary)
             {
+                string Pin = PINcode.Text;
 
+                Task.Run(async () =>
+                {
+                    await LinkNewModule.AcceptToAdd(Pin, DevicesName);
+                });
             }
             else
             {
-
+                ;
             }
         }
     }

@@ -4,6 +4,7 @@ using Microsoft.Windows.AppNotifications.Builder;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Net.NetworkInformation;
 using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 
@@ -93,7 +94,7 @@ namespace DevicesInterconnection.CS
 
                 string type = KeyWords[0];
 
-                if (type == "B" || type == "C")
+                if (type == "C")
                 {
                     continue;
                 }
@@ -110,9 +111,41 @@ namespace DevicesInterconnection.CS
 
                 CollectInfos.Add(Infos);
 
+                var butt1 = new AppNotificationButton("确定")
+                    .AddArgument("action", "OK");
+                var butt2 = new AppNotificationButton("查看")
+                    .AddArgument("action", "View");
+
+                var not = new AppNotificationBuilder()
+                    .AddText("有新的设备要添加")
+                    .AddText($"设备 {KeyWords[3]} 想要被你添加")
+                    .AddButton(butt1)
+                    .AddButton(butt2);
+                AppNotificationManager.Default.Show(not.BuildNotification());
 
                 await Task.Delay(10000);
             }
+        }
+
+        public static async Task AcceptToAdd(string PINCode,string DevicesName)
+        {
+            string ThisDevicesType = "PC";
+            string ThisBrand = "Microsoft";
+
+            string message = $"A,{PINCode},{DateTime.Now}," +
+                    $"{Environment.MachineName},{ThisDevicesType},{ThisBrand},{RuntimeInformation.OSDescription}";
+
+            
+            foreach (List<string> list in CollectInfos)
+            {
+                if (list[0] == DevicesName)
+                {
+                    CollectInfos.Remove(list);
+
+                    break;
+                }
+            }
+            await NetworkModule.StartInNetSend("", message);
         }
     }
 }

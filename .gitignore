@@ -3,3 +3,5 @@
 ################################################################################
 
 /.vs/DevicesInterconnection/FileContentIndex
+/Platform/Windows/bin
+/DevicesInterconnection_TemporaryKey.pfx

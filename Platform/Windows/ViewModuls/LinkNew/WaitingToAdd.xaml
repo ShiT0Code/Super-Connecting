@@ -8,38 +8,39 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <ScrollViewer>
-        <Grid RowSpacing="8">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
+    <Grid RowSpacing="8" ColumnSpacing="14">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
 
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="300"/>
-            </Grid.ColumnDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="300"/>
+        </Grid.ColumnDefinitions>
 
-            <TextBlock FontSize="22"
+        <TextBlock FontSize="22"
                    FontWeight="Bold"
                    Text="这些设备想要与你的设备互联"
                    Grid.ColumnSpan="2"/>
-            <InfoBar
+        <InfoBar
                 IsOpen="True"
                 Grid.Row="1"
-                Grid.ColumnSpan="2"
                 Severity="Warning"
-                IsClosable="False"
+                IsClosable="True"
                 Title="请注意："
                 Message="请根据下面展示出来的设备信息以及配对码来确认配对设备，请仔细甄别这是不是你要添加的设备，
 不要添加陌生设备，注意保护你的数据安全！"/>
 
-            <TextBlock x:Name="AD" Grid.Row="2"/>
+        <InfoBar Grid.Row="2"
+                 IsOpen="False"
+                 x:Name="Sent"
+                 Severity="Success"
+                 Title="已发送"/>
 
-            <Grid Grid.Row="3" Grid.Column="1"
-                  RowSpacing="4">
+        <ScrollViewer Grid.Row="3" Grid.Column="1">
+            <Grid RowSpacing="4">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="*"/>
@@ -56,12 +57,12 @@
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
-                        
+
                 <TextBlock FontWeight="Bold"
-                            FontSize="22"
-                            Text="详细信息"/>
-                <Image Height="200" Width="200"
-                        Grid.Row="1" Grid.ColumnSpan="2"/>
+                    FontSize="22"
+                    Text="详细信息"/>
+                <Image Height="150" Width="150"
+                Grid.Row="1" Grid.ColumnSpan="2"/>
 
                 <TextBlock Text="类别：" Grid.Row="3"/>
                 <TextBlock Text="配对码：" Grid.Row="4"/>
@@ -70,7 +71,7 @@
                 <TextBlock Text="品牌：" Grid.Row="7"/>
 
                 <TextBlock x:Name="DeName" Grid.ColumnSpan="2" Grid.Row="2"
-                           FontWeight="Bold" FontSize="18"/>
+                   FontWeight="Bold" FontSize="18"/>
                 <TextBlock x:Name="DeType" Grid.Column="1" Grid.Row="3"/>
                 <TextBlock x:Name="PINcode" Grid.Column="1" Grid.Row="4"/>
                 <TextBlock x:Name="SendT" Grid.Column="1" Grid.Row="5"/>
@@ -78,39 +79,39 @@
                 <TextBlock x:Name="DeBrand" Grid.Column="1" Grid.Row="7"/>
 
                 <Button Content="确认配对" Style="{StaticResource AccentButtonStyle}"
-                        Grid.Row="8"
-                        Click="Accect_Button_Click"/>
+                Grid.Row="8"
+                Click="Accect_Button_Click"/>
             </Grid>
-            
-            <ItemsView
+        </ScrollViewer>
+
+        <ItemsView
                 ItemsSource="{x:Bind LinkNewViewModel1.WLNViewModel}"
                 IsItemInvokedEnabled="True"
                 ItemInvoked="ItemsView_ItemInvoked"
                 SelectionMode="None"
                 Grid.Row="3">
-                <ItemsView.ItemTemplate>
-                    <DataTemplate x:DataType="local:WaitingLinkingNewData">
-                        <ItemContainer>
-                            <StackPanel Spacing="8"
+            <ItemsView.ItemTemplate>
+                <DataTemplate x:DataType="local:WaitingLinkingNewData">
+                    <ItemContainer>
+                        <StackPanel Spacing="8"
                                         Padding="8">
-                                <Image Height="200" Width="200"
+                            <Image Height="200" Width="200"
                     HorizontalAlignment="Center"/>
-                                <TextBlock Text="{x:Bind Name}"
+                            <TextBlock Text="{x:Bind Name}"
                     HorizontalAlignment="Center"/>
-                                <TextBlock Text="{x:Bind DeviceType}"
+                            <TextBlock Text="{x:Bind DeviceType}"
                     HorizontalAlignment="Center"/>
-                                <TextBlock Text="{x:Bind PIN}"
+                            <TextBlock Text="{x:Bind PIN}"
                     HorizontalAlignment="Center"/>
-                            </StackPanel>
-                        </ItemContainer>
-                    </DataTemplate>
-                </ItemsView.ItemTemplate>
-                <ItemsView.Layout>
-                    <UniformGridLayout MinRowSpacing="5"
+                        </StackPanel>
+                    </ItemContainer>
+                </DataTemplate>
+            </ItemsView.ItemTemplate>
+            <ItemsView.Layout>
+                <UniformGridLayout MinRowSpacing="5"
                                         MinColumnSpacing="5" MaximumRowsOrColumns="3"/>
-                </ItemsView.Layout>
+            </ItemsView.Layout>
 
-            </ItemsView>
-        </Grid>
-    </ScrollViewer>
+        </ItemsView>
+    </Grid>
 </Page>

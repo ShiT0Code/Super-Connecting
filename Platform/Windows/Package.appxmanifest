@@ -9,8 +9,8 @@
 
   <Identity
     Name="4bbb5132-21e9-4438-a938-c271105c1005"
-    Publisher="CN=hbeau"
-    Version="1.0.0.0" />
+    Publisher="CN=ShiT0Code"
+    Version="0.0.0.0" />
 
   <mp:PhoneIdentity PhoneProductId="4bbb5132-21e9-4438-a938-c271105c1005" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
