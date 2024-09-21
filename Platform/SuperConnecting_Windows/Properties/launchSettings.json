@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "SuperConnecting_Windows (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "SuperConnecting_Windows (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

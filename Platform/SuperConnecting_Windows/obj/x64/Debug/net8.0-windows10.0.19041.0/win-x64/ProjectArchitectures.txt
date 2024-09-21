@@ -1,0 +1,1 @@
+C:\Users\hbeau\ScoreCode\Super-Connecting\Platform\SuperConnecting_Windows\SuperConnecting_Windows.csproj;x64
