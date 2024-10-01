@@ -1,1 +1,0 @@
-C:\Users\hbeau\ScoreCode\DevicesInterconnection\Platform\DevicesInterconnection\DevicesInterconnection.csproj;x86

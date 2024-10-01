@@ -8,15 +8,15 @@
   IgnorableNamespaces="uap rescap">
 
   <Identity
-    Name="e83e69dd-f0a3-4f6a-8d9e-54df01135ced"
+    Name="bf0f0b9d-9caf-4e23-b697-5415a56eac59"
     Publisher="CN=hbeau"
-    Version="0.0.0.0" />
+    Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="e83e69dd-f0a3-4f6a-8d9e-54df01135ced" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="bf0f0b9d-9caf-4e23-b697-5415a56eac59" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>Super Connecting for Windows</DisplayName>
-    <PublisherDisplayName>ShiT0Code</PublisherDisplayName>
+    <DisplayName>SuperConnecting_Windows</DisplayName>
+    <PublisherDisplayName>hbeau</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
@@ -34,10 +34,11 @@
       Executable="$targetnametoken$.exe"
       EntryPoint="$targetentrypoint$">
       <uap:VisualElements
-        DisplayName="超级互联"
+        DisplayName="SuperConnecting_Windows"
+        Description="SuperConnecting_Windows"
         BackgroundColor="transparent"
         Square150x150Logo="Assets\Square150x150Logo.png"
-        Square44x44Logo="Assets\Square44x44Logo.png" Description="1">
+        Square44x44Logo="Assets\Square44x44Logo.png">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" />
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
       </uap:VisualElements>
