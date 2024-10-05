@@ -1,12 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "II/4u54kkQE=",
+  "dgSpecHash": "wR8I6ZvrUH0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\hbeau\\ScoreCode\\Super-Connecting\\Platform\\SuperConnecting_Windows\\SuperConnecting_Windows.csproj",
+  "projectFilePath": "C:\\Users\\hbeau\\SourceCodes\\Super-Connecting\\Platform\\SuperConnecting_Windows\\SuperConnecting_Windows.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\hbeau\\.nuget\\packages\\microsoft.web.webview2\\1.0.2651.64\\microsoft.web.webview2.1.0.2651.64.nupkg.sha512",
-    "C:\\Users\\hbeau\\.nuget\\packages\\microsoft.windows.sdk.buildtools\\10.0.22621.756\\microsoft.windows.sdk.buildtools.10.0.22621.756.nupkg.sha512",
-    "C:\\Users\\hbeau\\.nuget\\packages\\microsoft.windowsappsdk\\1.6.240829007\\microsoft.windowsappsdk.1.6.240829007.nupkg.sha512",
+    "C:\\Users\\hbeau\\.nuget\\packages\\microsoft.windows.sdk.buildtools\\10.0.26100.1742\\microsoft.windows.sdk.buildtools.10.0.26100.1742.nupkg.sha512",
+    "C:\\Users\\hbeau\\.nuget\\packages\\microsoft.windowsappsdk\\1.5.240802000\\microsoft.windowsappsdk.1.5.240802000.nupkg.sha512",
     "C:\\Users\\hbeau\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\8.0.8\\microsoft.netcore.app.runtime.win-x86.8.0.8.nupkg.sha512",
     "C:\\Users\\hbeau\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.34\\microsoft.windows.sdk.net.ref.10.0.19041.34.nupkg.sha512",
     "C:\\Users\\hbeau\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\8.0.8\\microsoft.aspnetcore.app.runtime.win-x86.8.0.8.nupkg.sha512",

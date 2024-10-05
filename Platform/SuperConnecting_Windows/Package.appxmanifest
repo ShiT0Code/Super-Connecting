@@ -8,11 +8,11 @@
   IgnorableNamespaces="uap rescap">
 
   <Identity
-    Name="bf0f0b9d-9caf-4e23-b697-5415a56eac59"
+    Name="c26ab07a-0974-4dbe-8cfd-46b4dc7a27a0"
     Publisher="CN=hbeau"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="bf0f0b9d-9caf-4e23-b697-5415a56eac59" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="c26ab07a-0974-4dbe-8cfd-46b4dc7a27a0" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>SuperConnecting_Windows</DisplayName>

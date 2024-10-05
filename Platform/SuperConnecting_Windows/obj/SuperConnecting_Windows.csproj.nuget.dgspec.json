@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hbeau\\ScoreCode\\Super-Connecting\\Platform\\SuperConnecting_Windows\\SuperConnecting_Windows.csproj": {}
+    "C:\\Users\\hbeau\\SourceCodes\\Super-Connecting\\Platform\\SuperConnecting_Windows\\SuperConnecting_Windows.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hbeau\\ScoreCode\\Super-Connecting\\Platform\\SuperConnecting_Windows\\SuperConnecting_Windows.csproj": {
+    "C:\\Users\\hbeau\\SourceCodes\\Super-Connecting\\Platform\\SuperConnecting_Windows\\SuperConnecting_Windows.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hbeau\\ScoreCode\\Super-Connecting\\Platform\\SuperConnecting_Windows\\SuperConnecting_Windows.csproj",
+        "projectUniqueName": "C:\\Users\\hbeau\\SourceCodes\\Super-Connecting\\Platform\\SuperConnecting_Windows\\SuperConnecting_Windows.csproj",
         "projectName": "SuperConnecting_Windows",
-        "projectPath": "C:\\Users\\hbeau\\ScoreCode\\Super-Connecting\\Platform\\SuperConnecting_Windows\\SuperConnecting_Windows.csproj",
+        "projectPath": "C:\\Users\\hbeau\\SourceCodes\\Super-Connecting\\Platform\\SuperConnecting_Windows\\SuperConnecting_Windows.csproj",
         "packagesPath": "C:\\Users\\hbeau\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hbeau\\ScoreCode\\Super-Connecting\\Platform\\SuperConnecting_Windows\\obj\\",
+        "outputPath": "C:\\Users\\hbeau\\SourceCodes\\Super-Connecting\\Platform\\SuperConnecting_Windows\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -51,11 +51,11 @@
           "dependencies": {
             "Microsoft.Windows.SDK.BuildTools": {
               "target": "Package",
-              "version": "[10.0.22621.756, )"
+              "version": "[10.0.26100.1742, )"
             },
             "Microsoft.WindowsAppSDK": {
               "target": "Package",
-              "version": "[1.6.240829007, )"
+              "version": "[1.5.240802000, )"
             }
           },
           "imports": [
