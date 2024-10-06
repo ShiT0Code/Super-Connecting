@@ -1,8 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Platform"
+    "\\Platform",
+    "\\Platform\\Windows"
   ],
-  "SelectedNode": "\\Platform",
   "PreviewInSolutionExplorer": false
 }
