@@ -6,11 +6,10 @@
     xmlns:local="using:SuperConnecting_Windows.UI.Windows"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Title="超级互联">
+    mc:Ignorable="d">
 
     <Window.SystemBackdrop>
-        <MicaBackdrop/>
+        <MicaBackdrop Kind="Base"/>
     </Window.SystemBackdrop>
 
     <Grid>
@@ -18,7 +17,7 @@
             <RowDefinition Height="48"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        
+
         <Grid x:Name="TitBar"/>
 
         <NavigationView
@@ -31,7 +30,7 @@
             IsBackEnabled="True">
 
             <NavigationView.MenuItems>
-                
+
                 <NavigationViewItem Content="主页"
                                     Icon="Home"
                                     Tag="Home"/>
@@ -42,7 +41,7 @@
 
             </NavigationView.MenuItems>
 
-            <Frame x:Name="mainFrame" Padding="32"/>
+            <Frame x:Name="mainFram" Padding="22"/>
 
         </NavigationView>
     </Grid>

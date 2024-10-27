@@ -5,6 +5,7 @@ using Microsoft.UI.Xaml.Data;
 using Microsoft.UI.Xaml.Input;
 using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Navigation;
+using SuperConnecting_Windows.UI.Pages.MainPages;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -33,9 +34,10 @@ namespace SuperConnecting_Windows.UI.Windows
 
         private void Nav_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
         {
-            if(sender.SelectedItem==sender.SettingsItem)
+            if (sender.SelectedItem == sender.SettingsItem)
             {
                 sender.Header = "…Ë÷√";
+                mainFram.Navigate(typeof(SettingsPage));
             }
             else
             {
@@ -49,7 +51,7 @@ namespace SuperConnecting_Windows.UI.Windows
                 string pageName = "SuperConnecting_Windows.UI.Pages.MainPages." + selectedItemTag + "Page";
                 Type pageType = Type.GetType(pageName);
 
-                mainFrame.Navigate(pageType);
+                mainFram.Navigate(pageType);
             }
         }
 
@@ -60,9 +62,9 @@ namespace SuperConnecting_Windows.UI.Windows
 
         private void Nav_BackRequested(NavigationView sender, NavigationViewBackRequestedEventArgs args)
         {
-            if (mainFrame.CanGoBack)
+            if (mainFram.CanGoBack)
             {
-                mainFrame.GoBack();
+                mainFram.GoBack();
             }
         }
     }

@@ -8,14 +8,14 @@
   IgnorableNamespaces="uap rescap">
 
   <Identity
-    Name="c26ab07a-0974-4dbe-8cfd-46b4dc7a27a0"
-    Publisher="CN=ShiT0Code"
-    Version="0.0.0.0" />
+    Name="b73f8eac-bb8c-4776-8211-3e9858e2af3d"
+    Publisher="CN=hbeau"
+    Version="0.0.1.0" />
 
-  <mp:PhoneIdentity PhoneProductId="c26ab07a-0974-4dbe-8cfd-46b4dc7a27a0" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="b73f8eac-bb8c-4776-8211-3e9858e2af3d" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>Super Connecting for Windows</DisplayName>
+    <DisplayName>设备互联</DisplayName>
     <PublisherDisplayName>ShiT0Code</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -34,8 +34,8 @@
       Executable="$targetnametoken$.exe"
       EntryPoint="$targetentrypoint$">
       <uap:VisualElements
-        DisplayName="超级互联"
-        Description="Super Connecting for Windows"
+        DisplayName="设备互联"
+        Description="SuperConnecting_Windows"
         BackgroundColor="transparent"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png">

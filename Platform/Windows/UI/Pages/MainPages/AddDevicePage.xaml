@@ -11,63 +11,28 @@
     <Grid RowSpacing="16">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
         <TextBlock Text="选择添加方式" Style="{StaticResource SubtitleTextBlockStyle}"/>
 
-        <FlipView Grid.Row="1" Background="Transparent">
-            <Grid Background="{StaticResource LayerOnMicaBaseAltFillColorSecondary}"
-                  RowSpacing="8" Padding="12">
-                
+        
+        <Button Click="Button_Click" Grid.Row="1">
+            <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
-                
-                <TextBlock Text="使用配对码"
-                           Style="{StaticResource SubtitleTextBlockStyle}"
-                           TextAlignment="Center"
-                           Padding="18"/>
-                
-                <InfoBar x:Name="Message"
-                         IsOpen="False"
-                         Grid.Row="2"/>
 
-                <RichTextBlock Grid.Row="3">
-                    <Paragraph>
-                        （一些描述文本）
-                    </Paragraph>
-                </RichTextBlock>
-                
-                <StackPanel Grid.Row="4" Orientation="Horizontal" Spacing="8">
-                    <Button Content="点击发送"
-                        Click="Button_Click"
-                            x:Name="sendBu"/>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
 
-                    <ProgressRing x:Name="sending" IsActive="False"/>
-
-                    <FontIcon Glyph="&#xE8FB;" x:Name="finished" Width="0"/>
-                </StackPanel>
-
-                <Expander Grid.Row="5" IsExpanded="True" HorizontalAlignment="Left">
-                    <Expander.Header>
-                        高级选项
-                    </Expander.Header>
-
-                    <Expander.Content>
-                        <StackPanel>
-                            
-                        </StackPanel>
-                    </Expander.Content>
-                </Expander>
+                <TextBlock Style="{StaticResource BodyTextBlockStyle}"
+                           Text="使用配对码"/>
             </Grid>
-            
-            <Grid></Grid>
-        </FlipView>
+        </Button>
+        
     </Grid>
 </Page>
