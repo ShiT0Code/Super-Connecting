@@ -5,7 +5,8 @@ using Microsoft.UI.Xaml.Data;
 using Microsoft.UI.Xaml.Input;
 using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Navigation;
-using SuperConnecting_Windows.UI.Pages.SecondaryPage;
+using SuperConnecting_Windows.UI.Pages.SecondaryPage.AddDevice;
+using SuperConnecting_Windows.UI.Windows;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -32,6 +33,9 @@ namespace SuperConnecting_Windows.UI.Pages.MainPages
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(AddByPIN));
+
+            MainWindow.HistoryNavHeader.Add("title");
+            MainWindow.HistoryNavIndex.Add(1);
         }
     }
 }

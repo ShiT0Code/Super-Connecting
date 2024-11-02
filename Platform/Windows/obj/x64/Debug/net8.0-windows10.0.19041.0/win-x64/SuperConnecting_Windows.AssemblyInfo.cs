@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SuperConnecting_Windows")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+32db347c3ea5874688bf3248c36e7a8a035c21f4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7b4efb75fd7431efde5b894414ce0201970e5413")]
 [assembly: System.Reflection.AssemblyProductAttribute("SuperConnecting_Windows")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SuperConnecting_Windows")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

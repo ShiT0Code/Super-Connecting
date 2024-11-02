@@ -9,6 +9,15 @@
     mc:Ignorable="d">
 
     <Grid>
-        <TextBlock Text="设置"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <SelectorBar SelectionChanged="SelectorBar_SelectionChanged">
+            <SelectorBarItem Text="关于" x:Name="About" IsSelected="True"/>
+        </SelectorBar>
+
+        <Frame x:Name="SettingFrame" Grid.Row="1"/>
     </Grid>
 </Page>

@@ -2,5 +2,6 @@ App.xbf
 UI\Pages\MainPages\AddDevicePage.xbf
 UI\Pages\MainPages\HomePage.xbf
 UI\Pages\MainPages\SettingsPage.xbf
-UI\Pages\SecondaryPage\AddByPIN.xbf
+UI\Pages\SecondaryPage\AddDevice\AddByPIN.xbf
+UI\Pages\SecondaryPage\Settings\About.xbf
 UI\Windows\MainWindow.xbf

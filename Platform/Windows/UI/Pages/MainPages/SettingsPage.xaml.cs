@@ -5,11 +5,13 @@ using Microsoft.UI.Xaml.Data;
 using Microsoft.UI.Xaml.Input;
 using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Navigation;
+using SuperConnecting_Windows.UI.Pages.SecondaryPage.Settings;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Security.AccessControl;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 
@@ -26,6 +28,19 @@ namespace SuperConnecting_Windows.UI.Pages.MainPages
         public SettingsPage()
         {
             this.InitializeComponent();
+        }
+
+        private void SelectorBar_SelectionChanged(SelectorBar sender, SelectorBarSelectionChangedEventArgs args)
+        {
+            SelectorBarItem selectorBarItem = sender.SelectedItem;
+            int currentSelectedIndex = sender.Items.IndexOf(selectorBarItem);
+
+            switch (currentSelectedIndex)
+            {
+                default:
+                    SettingFrame.Navigate(typeof(About));
+                    break;
+            }
         }
     }
 }
