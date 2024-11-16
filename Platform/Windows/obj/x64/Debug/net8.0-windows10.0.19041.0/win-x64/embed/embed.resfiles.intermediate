@@ -4,4 +4,8 @@ UI\Pages\MainPages\HomePage.xbf
 UI\Pages\MainPages\SettingsPage.xbf
 UI\Pages\SecondaryPage\AddDevice\AddByPIN.xbf
 UI\Pages\SecondaryPage\Settings\About.xbf
+UI\Pages\SecondaryPage\Settings\Assistive.xbf
+UI\Pages\SecondaryPage\Settings\General.xbf
+UI\Pages\SecondaryPage\Settings\Network.xbf
+UI\Pages\SecondaryPage\Settings\UsersManage.xbf
 UI\Windows\MainWindow.xbf

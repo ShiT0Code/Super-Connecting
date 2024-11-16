@@ -12,27 +12,56 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
         <TextBlock Text="选择添加方式" Style="{StaticResource SubtitleTextBlockStyle}"/>
 
-        
-        <Button Click="Button_Click" Grid.Row="1">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                </Grid.RowDefinitions>
 
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition Width="Auto"/>
-                </Grid.ColumnDefinitions>
+        <Expander HorizontalAlignment="Stretch"
+          Padding="14"
+          Grid.Row="1"
+          IsExpanded="True">
+            <Expander.Header>
+                长期配对连接
+            </Expander.Header>
+            <Expander.Content>
+                <StackPanel VerticalAlignment="Stretch">
+                    <Button Click="Button_Click"
+                            Grid.Row="1"
+                            VerticalAlignment="Stretch">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
 
-                <TextBlock Style="{StaticResource BodyTextBlockStyle}"
-                           Text="使用配对码"/>
-            </Grid>
-        </Button>
-        
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock Style="{StaticResource BodyTextBlockStyle}"
+                   Text="使用配对码"/>
+                        </Grid>
+                    </Button>
+                </StackPanel>    
+            </Expander.Content>
+        </Expander>
+
+        <Expander HorizontalAlignment="Stretch"
+            Padding="14"
+            Grid.Row="2"
+                  IsExpanded="True">
+            <Expander.Header>
+                临时连接
+            </Expander.Header>
+            <Expander.Content>
+                <StackPanel>
+                    
+                </StackPanel>
+            </Expander.Content>
+        </Expander>
+
     </Grid>
 </Page>

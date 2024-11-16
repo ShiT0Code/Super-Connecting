@@ -1,18 +1,8 @@
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
-using Microsoft.UI.Xaml.Controls.Primitives;
-using Microsoft.UI.Xaml.Data;
-using Microsoft.UI.Xaml.Input;
-using Microsoft.UI.Xaml.Media;
-using Microsoft.UI.Xaml.Navigation;
 using SuperConnecting_Windows.UI.Pages.MainPages;
 using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -39,7 +29,7 @@ namespace SuperConnecting_Windows.UI.Windows
         {
             if (sender.SelectedItem == sender.SettingsItem)
             {
-                sender.Header = "…Ë÷√";
+                HeaderText.Text = "…Ë÷√";
                 mainFram.Navigate(typeof(SettingsPage));
 
                 HistoryNavHeader.Add("…Ë÷√");
@@ -55,7 +45,7 @@ namespace SuperConnecting_Windows.UI.Windows
                 HistoryNavHeader.Add(title);
                 HistoryNavIndex.Add(sender.MenuItems.IndexOf(selectedItem));
 
-                sender.Header = title;
+                HeaderText.Text = title;
 
                 string pageName = "SuperConnecting_Windows.UI.Pages.MainPages." + selectedItemTag + "Page";
                 Type pageType = Type.GetType(pageName);
@@ -78,7 +68,7 @@ namespace SuperConnecting_Windows.UI.Windows
                 HistoryNavHeader.RemoveAt(HistoryNavHeader.Count - 1);
                 HistoryNavIndex.RemoveAt(HistoryNavIndex.Count - 1);
 
-                Nav.Header = HistoryNavHeader[HistoryNavHeader.Count - 1];
+                HeaderText.Text = HistoryNavHeader[HistoryNavHeader.Count - 1];
 
                 Nav.SelectionChanged -= Nav_SelectionChanged;
                 int a = HistoryNavIndex[HistoryNavIndex.Count - 1];
@@ -88,6 +78,18 @@ namespace SuperConnecting_Windows.UI.Windows
                     Nav.SelectedItem = Nav.MenuItems[a];
                 Nav.SelectionChanged += Nav_SelectionChanged;
             }
+        }
+
+        private void mainFram_Navigating(object sender, Microsoft.UI.Xaml.Navigation.NavigatingCancelEventArgs e)
+        {
+            Loading.Width = 999999;
+            Loading.IsIndeterminate = true;
+        }
+
+        private void mainFram_Navigated(object sender, Microsoft.UI.Xaml.Navigation.NavigationEventArgs e)
+        {
+            Loading.Width = 0;
+            Loading.IsIndeterminate = false;
         }
     }
 }

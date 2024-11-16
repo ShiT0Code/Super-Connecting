@@ -6,7 +6,8 @@
     xmlns:local="using:SuperConnecting_Windows.UI.Windows"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    mc:Ignorable="d"
+    Title="设备互联">
 
     <Window.SystemBackdrop>
         <MicaBackdrop Kind="Base"/>
@@ -18,7 +19,12 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Grid x:Name="TitBar"/>
+        <Grid x:Name="TitBar">
+            <StackPanel Orientation="Horizontal" Padding="16">
+                <Image Source="Assets\StoreLogo.png"    />
+                <TextBlock Text="设备互联"/>
+            </StackPanel>
+        </Grid>
 
         <NavigationView
             x:Name="Nav"
@@ -28,6 +34,17 @@
             Loaded="Nav_Loaded"
             BackRequested="Nav_BackRequested"
             IsBackEnabled="True">
+            <NavigationView.Header>
+                <StackPanel>
+                    <TextBlock x:Name="HeaderText"
+                               Style="{StaticResource TitleTextBlockStyle}"
+                               FontWeight="Bold"/>
+
+                    <ProgressBar x:Name="Loading"
+                                 HorizontalAlignment="Stretch"
+                                 IsIndeterminate="True"/>
+                </StackPanel>
+            </NavigationView.Header>
 
             <NavigationView.MenuItems>
 
@@ -41,7 +58,10 @@
 
             </NavigationView.MenuItems>
 
-            <Frame x:Name="mainFram" Padding="22"/>
+            <Frame x:Name="mainFram"
+                   Padding="22"
+                   Navigating="mainFram_Navigating"
+                   Navigated="mainFram_Navigated"/>
 
         </NavigationView>
     </Grid>

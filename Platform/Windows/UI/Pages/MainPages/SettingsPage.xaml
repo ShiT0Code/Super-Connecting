@@ -15,7 +15,11 @@
         </Grid.RowDefinitions>
 
         <SelectorBar SelectionChanged="SelectorBar_SelectionChanged">
-            <SelectorBarItem Text="关于" x:Name="About" IsSelected="True"/>
+            <SelectorBarItem Text="通用" IsSelected="True"/>
+            <SelectorBarItem Text="网络"/>
+            <SelectorBarItem Text="用户管理"/>
+            <SelectorBarItem Text="辅助功能"/>
+            <SelectorBarItem Text="关于"/>
         </SelectorBar>
 
         <Frame x:Name="SettingFrame" Grid.Row="1"/>

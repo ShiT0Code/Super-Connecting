@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
@@ -12,6 +12,14 @@
     <UseWinUI>true</UseWinUI>
     <EnableMsixTooling>true</EnableMsixTooling>
     <DefaultLanguage>zh-hans-cn</DefaultLanguage>
+    <GenerateAppInstallerFile>False</GenerateAppInstallerFile>
+    <AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
+    <PackageCertificateThumbprint>A47D4921C93D25FA3338F36D1B684A946F37C65A</PackageCertificateThumbprint>
+    <AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
+    <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
+    <AppxSymbolPackageEnabled>False</AppxSymbolPackageEnabled>
+    <GenerateTestArtifacts>True</GenerateTestArtifacts>
+    <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="UI\Pages\MainPages\AddDevicePage.xaml" />
@@ -19,6 +27,10 @@
     <None Remove="UI\Pages\MainPages\SettingsPage.xaml" />
     <None Remove="UI\Pages\SecondaryPage\AddDevice\AddByPIN.xaml" />
     <None Remove="UI\Pages\SecondaryPage\Settings\About.xaml" />
+    <None Remove="UI\Pages\SecondaryPage\Settings\Assistive.xaml" />
+    <None Remove="UI\Pages\SecondaryPage\Settings\General.xaml" />
+    <None Remove="UI\Pages\SecondaryPage\Settings\Network.xaml" />
+    <None Remove="UI\Pages\SecondaryPage\Settings\UsersManage.xaml" />
     <None Remove="UI\Windows\MainWindow.xaml" />
   </ItemGroup>
 
@@ -39,6 +51,26 @@
   -->
   <ItemGroup Condition="'$(DisableMsixProjectCapabilityAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
     <ProjectCapability Include="Msix" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="UI\Pages\SecondaryPage\Settings\Assistive.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="UI\Pages\SecondaryPage\Settings\UsersManage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="UI\Pages\SecondaryPage\Settings\Network.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="UI\Pages\SecondaryPage\Settings\General.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Page Update="UI\Pages\MainPages\AddDevicePage.xaml">

@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\hbeau\\SourceCodes\\Super-Connecting\\Platform\\Windows\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{67FDD5F6-AAD0-42D3-9EDF-691AA8702195}|SuperConnecting_Windows.csproj|c:\\users\\hbeau\\sourcecodes\\super-connecting\\platform\\windows\\ui\\windows\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67FDD5F6-AAD0-42D3-9EDF-691AA8702195}|SuperConnecting_Windows.csproj|solutionrelative:ui\\windows\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67FDD5F6-AAD0-42D3-9EDF-691AA8702195}|SuperConnecting_Windows.csproj|c:\\users\\hbeau\\sourcecodes\\super-connecting\\platform\\windows\\ui\\windows\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{67FDD5F6-AAD0-42D3-9EDF-691AA8702195}|SuperConnecting_Windows.csproj|solutionrelative:ui\\windows\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67FDD5F6-AAD0-42D3-9EDF-691AA8702195}|SuperConnecting_Windows.csproj|c:\\users\\hbeau\\sourcecodes\\super-connecting\\platform\\windows\\ui\\pages\\mainpages\\adddevicepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67FDD5F6-AAD0-42D3-9EDF-691AA8702195}|SuperConnecting_Windows.csproj|solutionrelative:ui\\pages\\mainpages\\adddevicepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{67FDD5F6-AAD0-42D3-9EDF-691AA8702195}|SuperConnecting_Windows.csproj|c:\\users\\hbeau\\sourcecodes\\super-connecting\\platform\\windows\\ui\\pages\\secondarypage\\settings\\about.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{67FDD5F6-AAD0-42D3-9EDF-691AA8702195}|SuperConnecting_Windows.csproj|solutionrelative:ui\\pages\\secondarypage\\settings\\about.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AddDevicePage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\hbeau\\SourceCodes\\Super-Connecting\\Platform\\Windows\\UI\\Pages\\MainPages\\AddDevicePage.xaml.cs",
-              "RelativeDocumentMoniker": "UI\\Pages\\MainPages\\AddDevicePage.xaml.cs",
-              "ToolTip": "C:\\Users\\hbeau\\SourceCodes\\Super-Connecting\\Platform\\Windows\\UI\\Pages\\MainPages\\AddDevicePage.xaml.cs",
-              "RelativeToolTip": "UI\\Pages\\MainPages\\AddDevicePage.xaml.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAAACUAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T12:05:17.59Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\hbeau\\SourceCodes\\Super-Connecting\\Platform\\Windows\\UI\\Windows\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "UI\\Windows\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\hbeau\\SourceCodes\\Super-Connecting\\Platform\\Windows\\UI\\Windows\\MainWindow.xaml",
-              "RelativeToolTip": "UI\\Windows\\MainWindow.xaml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-02T11:28:54.286Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\hbeau\\SourceCodes\\Super-Connecting\\Platform\\Windows\\UI\\Windows\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "UI\\Windows\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\hbeau\\SourceCodes\\Super-Connecting\\Platform\\Windows\\UI\\Windows\\MainWindow.xaml.cs",
-              "RelativeToolTip": "UI\\Windows\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAmwEsAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T10:50:06.019Z",
+              "Title": "About.xaml",
+              "DocumentMoniker": "C:\\Users\\hbeau\\SourceCodes\\Super-Connecting\\Platform\\Windows\\UI\\Pages\\SecondaryPage\\Settings\\About.xaml",
+              "RelativeDocumentMoniker": "UI\\Pages\\SecondaryPage\\Settings\\About.xaml",
+              "ToolTip": "C:\\Users\\hbeau\\SourceCodes\\Super-Connecting\\Platform\\Windows\\UI\\Pages\\SecondaryPage\\Settings\\About.xaml",
+              "RelativeToolTip": "UI\\Pages\\SecondaryPage\\Settings\\About.xaml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAuwCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-16T08:56:08.163Z",
               "EditorCaption": ""
             }
           ]

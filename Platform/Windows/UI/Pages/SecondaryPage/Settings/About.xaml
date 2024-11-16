@@ -8,48 +8,68 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <StackPanel Padding="18">
-        <Expander HorizontalAlignment="Stretch"
-                  VerticalAlignment="Stretch"
-                  Padding="14">
-            <Expander.Header>
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="48"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="Auto"/>
-                    </Grid.ColumnDefinitions>
+    <ScrollViewer>
+        <StackPanel Spacing="8">
+            <TextBlock Text="关于"
+               Style="{StaticResource BodyStrongTextBlockStyle}"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="48"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
 
-                    <Image Source="Assets\StoreLogo.png"
-                           Grid.RowSpan="2"/>
+                <Image Source="Assets\StoreLogo.png"/>
 
-                    <TextBlock Text="设备互联" Grid.Column="1"/>
+                <StackPanel Grid.Column="1">
+                    <TextBlock Text="设备互联"
+                       Style="{StaticResource BodyStrongTextBlockStyle}"/>
+                    <TextBlock Text="版本 0.0.2 （开发版本）"
+                       Style="{StaticResource CaptionTextBlockStyle}"/>
+                </StackPanel>
+            </Grid>
 
-                    <TextBlock Text="由 ShiT0Code发布"
-                               Style="{StaticResource CaptionTextBlockStyle}"
-                               Grid.Column="1"
-                               Grid.Row="1"/>
+            <TextBlock Text="重要信息"
+               Style="{StaticResource BodyStrongTextBlockStyle}"/>
+            <Expander HorizontalAlignment="Stretch"
+              Header="重要信息">
+                <Expander.Content>
+                    暂无
+                </Expander.Content>
+            </Expander>
 
-                    <TextBlock Text="版本 0.0.1"
-                               Grid.RowSpan="2"
-                               Grid.Column="2"
-                               VerticalAlignment="Center"
-                               HorizontalAlignment="Center"/>
-                </Grid>
-            </Expander.Header>
-            
-            <Expander.Content>
-                <StackPanel>
-                    <TextBlock Text="开放源代码库"/>
+            <TextBlock Text="联系我们"
+               Style="{StaticResource BodyStrongTextBlockStyle}"/>
 
-                    <HyperlinkButton Content="WinUI 3"
-                        NavigateUri="https://github.com/microsoft/microsoft-ui-xaml"/>
-                </StackPanel>    
-            </Expander.Content>
-        </Expander>
-    </StackPanel>
+            <TextBlock Text="电子邮箱："/>
+            <TextBlock Text="hbeauwor@outlook.com"/>
+
+            <TextBlock Text="加入此项目"
+                Style="{StaticResource BodyStrongTextBlockStyle}"/>
+            <HyperlinkButton Content="Github 仓库"
+                NavigateUri="https://github.com/ShiT0Code/Super-Connecting"/>
+
+            <TextBlock Text="赞助"
+                Style="{StaticResource BodyStrongTextBlockStyle}"/>
+            <Expander HorizontalAlignment="Stretch"
+                Header="赞助方式">
+                <Expander.Content>
+                    <FlipView Background="Transparent" Height="300">
+                        <StackPanel HorizontalAlignment="Center">
+                            <TextBlock Text="微信支付" TextAlignment="Center"/>
+
+                            <Image Height="250"
+                                Source="C:\Users\hbeau\SourceCodes\Super-Connecting\Platform\Windows\Assets\WeChat.png"/>
+                        </StackPanel>
+
+                        <StackPanel HorizontalAlignment="Center">
+                            <TextBlock Text="支付宝支付" TextAlignment="Center"/>
+                            
+                            <Image Height="250"
+                                Source="C:\Users\hbeau\SourceCodes\Super-Connecting\Platform\Windows\Assets\Alipay.png"/>
+                        </StackPanel>
+                    </FlipView>
+                </Expander.Content>
+            </Expander>
+        </StackPanel>
+    </ScrollViewer>
 </Page>

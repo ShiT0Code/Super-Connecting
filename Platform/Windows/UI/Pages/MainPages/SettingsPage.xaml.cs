@@ -1,19 +1,5 @@
-using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
-using Microsoft.UI.Xaml.Controls.Primitives;
-using Microsoft.UI.Xaml.Data;
-using Microsoft.UI.Xaml.Input;
-using Microsoft.UI.Xaml.Media;
-using Microsoft.UI.Xaml.Navigation;
 using SuperConnecting_Windows.UI.Pages.SecondaryPage.Settings;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using System.Security.AccessControl;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -37,8 +23,23 @@ namespace SuperConnecting_Windows.UI.Pages.MainPages
 
             switch (currentSelectedIndex)
             {
-                default:
+                case 0:
+                    SettingFrame.Navigate(typeof(General));
+                    break;
+                case 1:
+                    SettingFrame.Navigate(typeof(Network));
+                    break;
+                case 2:
+                    SettingFrame.Navigate(typeof(UsersManage));
+                    break;
+                case 3:
+                    SettingFrame.Navigate(typeof(Assistive));
+                    break;
+                case 4:
                     SettingFrame.Navigate(typeof(About));
+                    break;
+                default:
+                    SettingFrame.Navigate(typeof(General));
                     break;
             }
         }
